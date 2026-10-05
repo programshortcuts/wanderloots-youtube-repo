@@ -1,0 +1,224 @@
+<!-- 01-02.html -->
+<div id="targetDivInjected">
+    <header>
+        <h3 id="lessonTitle">01.2 - 1 (twelve) 12 Terms You Need Now </h3>
+        <h4 class="t">Fix images & 2x2 flex</h4>
+    </header>
+    <div class="main-container">
+        <div class="steps-container">
+            <div  class="step" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <!-- <h4><strong>Chatbot</strong> , <strong>Agent</strong> , <strong>Worker</strong></h4> -->
+                
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>Chatbot:</strong> An AI you talk to. It answers, then waits for the next message.</li>
+                        <li><strong>Agent:</strong> An AI that can work through a task. It plans, uses tools, checks the result, and adjusts.</li>
+                        <li><strong>Worker:</strong> Our name for an agent with a standing job. A worker has a clear responsibility, a trigger, tools, limits, and a way to report back.</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Terms</h3>
+
+            <!-- ******** PROBLEM WITH .STEP_FLOAT in STEP_FLOATS_CONTAINERS -->
+        <div class="step-floats-container"> 
+            <!-- 01 Model-->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-1.png" alt="">
+                    1. <strong>Model</strong> </h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong> the trained AI engine that reads your request and produces a response.</li>
+                        <li><strong>Why it matters:</strong> different models have different strengths, costs, speed, and reliability.</li>
+                        <li><strong>Where it shows up:</strong> when you choose what your worker thinks with. Examples include Claude, GPT, Gemini, and other model providers.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 02 Prompt -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-2.png" alt="">
+                    2. <strong>Prompt</strong> </h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong> the instruction and background you give the model.</li>
+                        <li><strong>Why it matters:</strong> a vague prompt creates vague work. A clear prompt gives the worker a job, standards, and boundaries.</li>
+                        <li><strong>Where it shows up:</strong> when you write directions like, "Summarize today's inbox and flag anything that needs me."</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 03 Context -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-3.png" alt="">
+                    3. <strong>Output</strong> </h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong> the answer, draft, file, summary, or action the model produces. </li>
+                        <li><strong>Why it matters:</strong>  you need to judge the output, not just the conversation. Good workers produce something useful.  </li>
+                        <li><strong>Where it shows up:</strong> when your worker sends a daily brief, creates a draft reply, updates a sheet, or reports a blocker.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 04 Context -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-4.png" alt="">
+                    4. <strong>Context</strong> </h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong>  everything the model can see while it works: your request, notes, examples, files, previous messages, and data it just pulled in.</li>
+                        <li><strong>Why it matters:</strong> context is what makes a worker specific to you instead of generic.</li>
+                        <li><strong>Where it shows up:</strong> when you give the worker your business notes, client rules, inbox examples, or project brief. </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 05 Context window -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-5.png" alt="">
+                    5.<strong>Context window</strong> <span class="t">aka length??</span></h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong> the model's temporary workspace. Only a certain amount of text and data fits inside it at one time. <span class="t">MD Files come into play here?</span></li>
+                        <li><strong>Why it matters:</strong> if the window fills up, old or less relevant material may fall out, which can make the worker forget details during a long task.</li>
+                        <li><strong>Where it shows up:</strong>  when long chats, big documents, and too many examples make the worker slower or less accurate.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 06 Memory-->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-6.png" alt="">
+                    6. <strong>Memory</h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong>  information the system saves between sessions, such as facts about you, your business, preferences, and recurring workflows.</li>
+                        <li><strong>Why it matters:</strong>  memory stops your worker from starting from zero every time.</li>
+                        <li><strong>Where it shows up:</strong>  when the worker remembers your tone, your company names, your client rules, or your recurring tasks</li>
+                    </ul>
+                </div>
+            </div>
+            <h5 class="t">Figure out why this is happening, ** Implement % first digit place navigation</h5>
+             <!-- 07 Session -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-7.png" alt="">
+                    7. <strong>Session</h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong>  one continuous work thread with the agent, from start to finish.</li>
+                        <li><strong>Why it matters:</strong> sessions keep context focused. Starting fresh when you switch tasks helps avoid confusion.</li>
+                        <li><strong>Where it shows up:</strong>  when you finish one task, start a new one, or ask the worker to continue the same job</li>
+                    </ul>
+                        
+                </div>
+            </div>
+            <!-- 08 Tool -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+                data-timestamp="74">
+                <h4><img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-8.png" alt="">
+                    8. <strong>Tool</h4>
+                <div class="step-txt ">
+                    <ul>
+                        <li><strong>What it means:</strong> something the worker can use to act on the world, such as email, calendar, browser, Drive, Sheets, or a script.</li>
+                        <li><strong>Why it matters:</strong> without tools, the AI can only talk. With tools, it can do <i>work</i></li>
+                        <li><strong>Where it shows up:</strong>  when the worker reads email, checks a calendar, searches the web, edits a document, or updates a database.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 09 Integration or API -->
+<div tabindex="0" class="step-float"
+    data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+    data-timestamp="74">
+
+    <h4>
+        <img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-9.png" alt="">
+        9. <strong>Integration or API</strong>
+    </h4>
+
+    <div class="step-txt">
+        <ul>
+            <li><strong>What it means:</strong> the connection that lets programs talk to each other. An integration is the user-friendly version. An API is the technical doorway underneath it.</li>
+            <li><strong>Why it matters:</strong> workers become valuable when they can reach real business systems instead of relying only on pasted text.</li>
+            <li><strong>Where it shows up:</strong> when your worker connects to Gmail, Slack, Stripe, HubSpot, Google Drive, or a custom business system.</li>
+        </ul>
+    </div>
+</div>
+<h2 class="t">** Implement % first digit place navigation</h2>
+<h3 class="t">0 twice 10 three time in row 20 , same for all digits 1->12-21, ... 9, 9->19->19
+    <sup>shift number goes reverse</sup>
+</h3>
+<!-- 10 Trigger, workflow, and automation -->
+<div tabindex="0" class="step-float"
+    data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+    data-timestamp="74">
+
+    <h4>
+        <img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-10.png" alt="">
+        10. <strong>Trigger, workflow, and automation</strong>
+    </h4>
+
+    <div class="step-txt">
+        <ul>
+            <li><strong>What it means:</strong> a <i>trigger</i> starts the job, a <i>workflow</i> is the sequence of steps, and <i>automation</i> means the job runs without you manually doing it each time.</li>
+            <li><strong>Why it matters:</strong> this is how you turn AI from a helper into an operating system.</li>
+            <li><strong>Where it shows up:</strong> when the worker runs every morning, watches for a new email, posts a report, or starts when you text it.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- 11 Guardrail, permission, and human approval -->
+<div tabindex="0" class="step-float"
+    data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+    data-timestamp="74">
+
+    <h4>
+        <img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-11.png" alt="">
+        11. <strong>Guardrail, permission, and human approval</strong>
+    </h4>
+
+    <div class="step-txt">
+        <ul>
+            <li><strong>What it means:</strong> the rules that say what a worker may do alone and what must wait for you.</li>
+            <li><strong>Why it matters:</strong> autonomy without limits is risky. Good workers move fast on safe tasks and pause before sensitive ones.</li>
+            <li><strong>Where it shows up:</strong> when a worker drafts an email but asks before sending, flags a payment before approval, or refuses to expose private data.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- 12 Logs, tests, and iteration -->
+<div tabindex="0" class="step-float"
+    data-video="https://www.youtube.com/watch?v=-cdRSpUJKNU"
+    data-timestamp="74">
+
+    <h4>
+        <img loading="lazy" src="side-bar-links-pages/01-02/media/01-02-12.png" alt="">
+        12. <strong>Logs, tests, and iteration</strong>
+    </h4>
+
+    <div class="step-txt">
+        <ul>
+            <li><strong>What it means:</strong> <i>logs</i> record what happened, <i>tests</i> check whether the worker works, and <i>iteration</i> means improving it after each run.</li>
+            <li><strong>Why it matters:</strong> reliable workers are built by checking results and tightening the system, not by hoping the first version is perfect.</li>
+            <li><strong>Where it shows up:</strong> when you review the daily brief, fix a missed rule, add a better example, and run the worker again.</li>
+        </ul>
+    </div>
+</div>
+<h2 class="t">** Implement % first digit place navigation</h2>
+<h3 class="t">0 twice 10 three time in row 20 , same for all digits 1->12-21, ... 9, 9->19->19
+    <sup>shift number goes reverse</sup>
+</h3>
+
+
+
+</div>
+
+            
+
+            
+
+        </div>
+    </div>
+</div>

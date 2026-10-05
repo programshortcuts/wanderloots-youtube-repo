@@ -1,0 +1,41 @@
+/* step-txt/spacing-step-txt.css */
+.header-codeColor-lesson {
+    padding-left: 2.5%;
+}
+.step-float {
+    padding-bottom: 5%;
+}
+.step-float h4{
+    margin-top: 3%;
+
+}
+.step>.step-txt {
+    /* padding: 1%; */
+}
+.step-float>.step-txt {
+    padding: 0 2%;
+}
+.step-float>.step-txt>p {
+    /* padding: 0 2%; */
+    margin-top: 2%;
+    line-height: 1.5;
+}
+.step-txt ul {
+    margin-left: 3%;
+}
+.step-txt ul li {
+    line-height: 1.5;
+}
+
+.step-float>p {
+    margin: 1% 2%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+}
+.step-float>.code-container {
+    margin-left: 2.5%;
+}
+.code-container {
+    margin-top: 2.5%;
+}
+

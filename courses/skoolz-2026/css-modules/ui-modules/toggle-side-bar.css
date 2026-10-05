@@ -1,0 +1,32 @@
+/* toggle-side-bar.css */
+.main-container.collapsed #sideBarBtn {
+    position: fixed;
+    bottom: 10%;
+    transform: scale(1.9);
+    left: 3%;
+    /* border: none; */
+
+
+}
+
+.main-container.collapsed #sideBarBtn {
+    position: fixed;
+    bottom: 10%;
+    left: 2%;
+    transform: scale(1.5);
+    z-index: 99
+}
+
+.main-container.collapsed .side-bar-links-container {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .main-container.collapsed>.side-bar {
+        width: 8vw !important;
+    }
+
+    .main-container.collapsed>#mainTargetDiv .steps-container>.step-float:not(:focus) {
+        border-left-color: transparent;
+    }
+}

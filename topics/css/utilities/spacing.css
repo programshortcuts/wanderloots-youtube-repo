@@ -1,0 +1,25 @@
+/* spacing.css */
+.page-wrapper>nav.nav-lesson-title {
+}
+.main-landing-page>nav#nxtPrevLessonsBtns button {
+    padding: 0 1%
+}
+#targetDivInjected{
+    /* margin-top: 5%; */
+    margin-bottom: 20%;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 10%;
+
+}
+.step-float {
+    margin: 1% 0;
+}
+.code-container> .copy-code{
+    padding-left: 1.4%;
+    padding-top: .8%;
+}
+.inject-content-btns-container{
+    margin-bottom: 3%;
+    /* padding-bottom: 2%; */
+}

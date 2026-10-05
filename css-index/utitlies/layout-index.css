@@ -1,0 +1,38 @@
+main.main-container {
+    margin: 0 5%;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.topic>a.drop-topic,
+.drop-sub-topic {
+    display: inline-flex;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-topics-container {
+    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-topics-container>.drop-parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-snips {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.hide {
+    display: none;
+}

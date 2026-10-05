@@ -1,0 +1,32 @@
+/* layout.css */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.page-wrapper>nav.nav-lesson-title {
+    display: flex;
+    
+    width: 80%;
+    margin-top: 0%;
+    z-index: 2;
+}
+main.main-container.collapsed {
+    display: static;
+}
+main.main-container {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    min-height: calc(100vh - 10vh);
+}
+
+#mainTargetDiv {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
+    height: calc(100vh - 10vh);
+}
+.inject-content-btns-container {
+    display: flex;}

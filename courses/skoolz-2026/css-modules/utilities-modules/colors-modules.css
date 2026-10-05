@@ -1,0 +1,40 @@
+/* Sidebar classes represent focus; they must match the actual focus style. */
+
+:root {
+    --bg-clr: grey;
+}
+
+.page-header a:visited {
+    color: white
+}
+
+
+.main-content a:visited {
+    color: black
+}
+
+body {
+    background-color: var(--bg-clr);
+}
+
+.page-header
+.page-header-links,
+.nav-lesson-title {
+    /* background-color: var(--bg-clr); */
+    background-color: rgba(0, 0, 0, 0)!important;
+    background-color: blue ;
+}
+
+
+.dark-mode .page-header,
+.dark-mode .page-header-links,
+.dark-mode .nav-lesson-title {
+    background-color: #201d1d;
+}
+
+.code-container>.copy-code {}
+
+.code-container>.copy-code {
+    background-color: var(--module-code-bg);
+    color: black;
+}

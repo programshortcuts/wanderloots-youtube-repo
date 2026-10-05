@@ -1,0 +1,153 @@
+/* The sidebar and lesson each scroll within the available viewport. */
+button {
+    cursor: pointer;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page-header {
+    flex: none;
+    /* Keep both shell rows above normal media layers (1–3). */
+    z-index: 4;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "links tutorial"
+        "title tutorial";
+    gap: 0;
+    align-items: stretch;
+    margin: 0;
+}
+
+.page-header a,
+.page-header button,
+.nav-lesson-title h1 {
+    pointer-events: auto;
+}
+
+.page-header-links {
+    display: flex;
+    grid-area: links;
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    overflow-wrap: anywhere;
+}
+
+.nav-lesson-title {
+    width: 100%;
+    grid-area: title;
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.tutorial-link-img-container {
+    grid-area: tutorial;
+    display: flex;
+    width: 6rem;
+    min-width: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.tutorial-link-img-container a {
+    display: block;
+}
+
+.tutorial-link-img-container img {
+    display: block;
+}
+
+
+
+main.main-container {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto;
+    flex: 1;
+}
+
+#mainTargetDiv {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    min-height: 0;
+    width: min(100%, var(--lesson-width));
+    padding: var(--lesson-gutter, 1rem);
+    overflow: auto;
+    overscroll-behavior: contain;
+    overflow-wrap: anywhere;
+    scroll-padding-block: 1rem;
+}
+
+/* Injected blocks follow the lesson pane's reference width. */
+#mainTargetDiv>* {
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.inject-content-btns-container {
+    grid-column: 2;
+    grid-row: 2;
+    width: min(100%, var(--lesson-width));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.inject-content-btns-container>button {
+    flex: 1 1 8rem;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.step-float {
+    margin: 1%;
+    border: 1px solid #787878;
+}
+
+.step-float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.step-txt,
+.step-img,
+.step-vid {
+    min-width: 0;
+}
+
+.code-container {
+    min-width: 0;
+    max-width: 100%;
+    border: 1px solid #787878;
+    border-radius: 8px;
+}
+
+.code-container>.copy-code {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    overflow: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    border-radius: 7px;
+}
+
+.hide {
+    display: none;
+}

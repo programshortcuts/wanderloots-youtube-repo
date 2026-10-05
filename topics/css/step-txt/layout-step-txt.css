@@ -1,0 +1,64 @@
+/* step-txt/text-step-txt.css */
+.no-float {
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+
+.no-float .step-img {
+    float: none !important;
+}
+
+.step {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-float {
+    display: block;
+}
+
+.step-float::after {
+    /* content: ""; */
+    /* display: block; */
+    /* clear: both; */
+}
+
+.step-float>.step-img,
+.step-float>.step-vid {
+    float: right;
+
+}
+
+.step-float>.step-txt {
+    display: block;
+    overflow: visible;
+}
+
+.step-float>.step-txt>p>a {
+    display: inline;
+    text-wrap: wrap;
+}
+
+.step-float>.imgs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-float>.imgs-container>* {
+    display: flex;
+}
+
+.step-vid {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-floats-container {
+    width: 100%;
+    display: flex;
+}
+
+.step-floats-container>.step-float {
+    flex-basis: 40%;
+}

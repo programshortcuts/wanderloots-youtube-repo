@@ -1,0 +1,30 @@
+/* borders.css */
+#mainLinks>a {
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+}
+.side-bar {
+    border-right: 1px solid black;
+}
+.page-wrapper >nav.nav-lesson-title {
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.code-container {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.code-container > .copy-code{
+    border-radius: 3px;
+}
+.step-float{
+    border: 1px solid black;
+}
+.step-vid video {
+    box-shadow: 0 0 1px 1px rgb(86, 120, 112);
+}
+.inject-content-btns-container button{
+    border-radius: 4px;
+}

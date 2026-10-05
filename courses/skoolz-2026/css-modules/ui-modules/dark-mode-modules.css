@@ -1,0 +1,25 @@
+/* Retain the Topics dark theme without loading shared topic styles. */
+
+
+
+
+body.dark-mode {
+    color-scheme: dark;
+    background: #201d1d;
+    color: whitesmoke;
+}
+
+.dark-mode a {
+    color: inherit;
+}
+
+.dark-mode .side-bar,
+.dark-mode .inject-content-btns-container {
+    background-color: #201d1d;
+}
+
+
+
+.dark-mode .t {
+    color: tomato;
+}

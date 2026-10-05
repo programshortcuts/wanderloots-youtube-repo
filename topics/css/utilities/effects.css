@@ -1,0 +1,75 @@
+/* effects.css */
+.step-float:focus,
+.step-float:active {
+    box-shadow: 2px 2px 10px lightblue;
+    background-color: rgb(126, 139, 144);
+    box-shadow: 2px 1px 10px rgb(116, 106, 60);
+    outline: none
+}
+.page-header a:focus,
+.page-header  a:active {
+    box-shadow: 0 0 10px 6px rgb(143, 194, 192);
+    border: 1px solid blue;
+    background: rgb(0,50,50,.5);
+}
+
+ul li a:visited {
+    text-decoration: none;
+    color: white;
+}
+.side-bar a:active,
+.side-bar a:focus{
+    border: 1px solid black;
+}
+#mainTargetDiv:active,#mainTargetDiv:focus {
+    outline: none;
+    box-shadow: 2px 1px 4px whitesmoke;
+    border: 1px solid rgb(135, 140, 104);
+        /* background-color: rgb(175, 191, 196); */
+}
+/* STEPS  */
+a:active,
+a:focus{
+    background-color: rgb(175, 191, 196);
+    outline: none;
+}
+.step-float:focus,.step-float:active{
+    /* box-shadow: 2px 1px 10px blue; */
+}
+.step-float.step-clicked{
+    box-shadow:none;
+    border: 1px solid rgb(66, 66, 128);
+    box-shadow: 0 0 2px 2px rgb(55, 55, 123);
+}
+.dark-mode a:active,
+.dark-mode a:focus ,
+.dark-mode .step-float:focus,
+/* .step-float:hover ,*/
+.dark-mode .step-float:active {
+    /* box-shadow: 2px 2px 10px lightblue; */
+    /* box-shadow: 2px 1px 10px rgb(179, 155, 95); */
+    border: 1px solid white;
+    outline: none;
+}
+#navTitle:active,#navTitle:focus,
+#sideBarBtn:active,#sideBarBtn:focus {
+    border: 1px solid white;
+    outline: auto;
+}
+#sideBarBtn {
+    cursor: pointer;
+}
+.sideLinkChange{
+    background-color: rgba(101, 157, 152, 0.5);
+    color: black !important;
+}
+.sideLinkChange *{
+    color: black !important;
+}
+
+#mainTargetDiv {
+    /* pointer-events: none; */
+}
+.copy-code:focus,.copy-code:active{
+    /* z-index: 99999 !important; */
+}

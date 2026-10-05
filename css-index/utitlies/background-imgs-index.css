@@ -1,0 +1,7 @@
+#skoolz {
+    background-image: url('../../images/skoolz.png');
+    /* background-size: contain; */
+    background-size: contain;
+    min-height: 5vh;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,84 @@
+<!-- 05.html -->
+<div id="targetDivInjected">
+    <header class="header-colorCode-lesson">
+        <h3 id="lessonTitle">5 - Store chat history
+            <span class="r">I have to fix videos for this repo</span>
+        </h3>
+    </header>
+    <div class="main-container-colorCode">
+        <div class="steps-container">
+            <!-- 01 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=d0o89z134CQ"
+                data-timestamp="588">
+                 <h4>1. create a <code class="y">handle_conversation()</code> function</h4> 
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/05/images/02.png"
+                        src="side-bar-links-pages/05/images/02.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button tabindex="-1" class="fwdBtn">&lt;&lt;</button>
+                        <button tabindex="-1" class="playbtn">></button>
+                        <button tabindex="-1" class="rwdBtn">>></button>
+                    </div>
+                </div>
+                <div class="step-txt">
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+def <span class="y">handle_conversation()</span>:
+    context = ""
+    print("Welcome, local Ai-chatbot")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() == "exit":
+            break
+        result = chain.invoke({"context": context, "question": user_input})
+        print("ai-botie: ",result)
+        context += f"\nUser: {user_input}\nAI: {result}"
+if __name__ == "__main__":
+   handle_conversation()
+</pre>
+                    </div>       
+                    <h5>full script</h5>
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+from langchain_ollama import OllamaLLM
+from langchain_core.prompts import ChatPromptTemplate
+template = """
+Answer the question below.
+
+Here is the conversation history: {context}
+
+Question: {question}
+
+Answer
+"""
+model = OllamaLLM(model="llama3")
+prompt = ChatPromptTemplate.from_template(template)
+chain = prompt | model
+result = chain.invoke({"context":"","question":"Tu puedes hablar espanol?"})
+
+def handle_conversation():
+    context = ""
+    print("Welcome, local ai-chatbot")
+    while True:
+        user_input = input("You: ")
+        if(user_input.lower() == "exit"):
+            break
+        result = chain.invoke({"context": context,"question":user_input})
+        print("ai-botie:", result)
+        context += f"\nUser: {user_input}\nAI: {result}"
+if __name__ == "__main__":
+    handle_conversation()
+</pre>
+                    </div>
+                    <p>I asked the following prompts, i think are useful</p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+In the Python script below, where is the conversation context being stored? Is the context saved by Ollama or Llama 3,
+or is it only stored in my Python variable? Please explain exactly what happens to the context during each call to
+chain.invoke() and whether it persists after the program closes.</code>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

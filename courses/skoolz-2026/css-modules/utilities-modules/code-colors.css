@@ -1,0 +1,31 @@
+.code-container span {
+    font-weight: 999 !important;
+    font-style: bold !important;
+
+}
+
+.t {
+    color: rgb(167, 61, 42);
+}
+
+.rb {
+    color: royalblue;
+}
+
+.lg {
+    color: rgb(29, 108, 83);
+}
+
+.gr {
+    color: rgb(218, 183, 78);
+
+}
+
+.m {
+    color: rgb(154, 72, 154);
+}
+
+.mpink {
+    color: rgb(154, 72, 112);
+
+}

@@ -1,0 +1,12 @@
+Why this will instantly feel better
+
+Because after this:
+    -keyboard-nav.js = brain
+
+    -get-focus-zone.js = eyes
+    
+    -sidebar-nav.js / step-nav.js = hands
+    
+    -toggle-sidebar.js = muscle (dumb, reliable)
+
+Right now you accidentally gave muscles a brain.

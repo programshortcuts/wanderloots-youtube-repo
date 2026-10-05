@@ -1,0 +1,27 @@
+/* popup-letterNav.css */
+#popupLetterNav{
+    display: inline-block;
+    position: sticky;
+    color: blue;
+    
+    font-weight: 99;
+    font-size: bold;
+    text-shadow: 0 0 2px white;
+    font-family: monospace;
+    opacity: 0;
+    font-size: 150%;
+    transition: opacity 500ms;
+    /* top: 0vh; */
+    bottom: 10vh;
+    left: 0;
+}
+#popupLetterNav.animate{
+    opacity: 1;
+    transition: opacity 400ms;
+    position: fixed;
+    /* top: 0; */
+}
+.dark-mode #popupLetterNav.animate {
+    color: limegreen;
+
+}

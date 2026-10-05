@@ -1,0 +1,34 @@
+/* step-txt/step-txt.css */
+
+.code-container {
+    width: fit-content;
+    min-width: 250px;
+}
+
+.step-float {
+    height: fit-content;
+    min-height: 220px;
+}
+
+.step-float>.step-img,
+.step-float>.step-vid {
+    width: 70%
+}
+
+.step-vid>video,
+.step-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.step-vid>video {
+    /* max-height: 200px ; */
+}
+
+.step-img>img {
+    max-height: 500px !important;
+}
+
+.step-float>.step-vid {
+    width: 50%;
+}

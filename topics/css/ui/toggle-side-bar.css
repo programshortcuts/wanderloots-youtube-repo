@@ -1,0 +1,46 @@
+/* toggle-side-bar.css */
+
+.main-container.collapsed .side-bar-links-container {
+    opacity: 0;
+    transition: all 250ms;
+}
+
+
+.main-container.collapsed #sideBarBtn {
+    transform: scale(1.8);
+    left: 10%;
+    margin-left: 10%;
+    top: 90% !important;
+}
+
+
+/* =========================
+   COLLAPSED DESKTOP
+   ========================= */
+
+@media screen and (min-width: 732px) {
+
+    .main-container.collapsed .side-bar {
+        width: 5% !important;
+        min-width: 0 !important;
+        max-width: 5% !important;
+        flex-basis: 5% !important;
+        flex-shrink: 0;
+    }
+}
+
+
+/* =========================
+   COLLAPSED MOBILE
+   ========================= */
+
+@media screen and (max-width: 731px) {
+
+    .main-container.collapsed .side-bar {
+        width: 50px !important;
+        min-width: 50px !important;
+        max-width: 50px !important;
+        flex-basis: 50px !important;
+        flex-shrink: 0;
+    }
+}

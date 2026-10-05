@@ -1,0 +1,40 @@
+/* components/side-bar.css */
+/* main>.side-bar {z-index: 100} */
+main>.side-bar::-webkit-scrollbar {
+    display: none;
+}
+
+main>.side-bar {
+    padding-top: 5%;
+}
+
+.side-bar-links-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 2%; */
+    margin-left: 5%;
+}
+
+.side-bar-links-container>ul li {
+    /* margin-top: 5%; */
+    margin-bottom: 10%;
+    max-width: 100%;
+
+}
+
+.side-bar ul li a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 90%;
+}
+
+.side-bar ul li ul li {
+    margin: 0;
+    padding-left: 4%;
+}
+
+.side-bar-links-container>ul code {
+    display: inline;
+}

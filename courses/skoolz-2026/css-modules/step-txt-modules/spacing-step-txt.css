@@ -1,0 +1,59 @@
+/* step-txt/spacing-step-txt.css */
+.step-txt>ul,
+.step-txt>ol {
+    margin: 0 2.5rem;
+}
+
+.step-txt ul li {
+    line-height: 1.5;
+}
+
+.steps-container article ul {
+    margin: 0 20%;
+    padding: 2% 0;
+}
+
+.step .step-txt ul,
+.step .step-txt ol {
+    margin: 0 5%;
+}
+
+.step-float {
+    padding: max(0.75rem, 2%);
+}
+
+.step-float h4 {
+    margin-top: 0.75rem;
+
+}
+
+.step>.step-txt {
+    /* padding: 1%; */
+}
+
+.step-float>.step-txt {
+    padding: 0;
+}
+
+.step-float>.step-txt>p {
+    /* padding: 0 2%; */
+    margin-top: 0.75rem;
+    line-height: 1.5;
+}
+
+.step-float>p {
+    margin: 0.75rem 0;
+}
+
+.step-float>.code-container {
+    margin-left: 0;
+}
+
+.code-container {
+    margin-top: 0.75rem;
+}
+
+.step-float>.step-img:not(.enlarge):not(.first-vid-enlarge),
+.step-float>.step-vid:not(.enlarge):not(.first-vid-enlarge) {
+    margin: 0 0 0.75rem 1rem;
+}

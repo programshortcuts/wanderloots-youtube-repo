@@ -1,0 +1,131 @@
+/* copy-code */
+.step-vid>.vid-cntrl-btns {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    z-index: 2;
+    max-height: 2vh !important;
+    height: 2vh !important;
+}
+
+.vid-cntrl-btns>button {
+    max-height: 2vh !important;
+    height: 2vh !important;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: inherit;
+    color: goldenrod;
+    flex-basis: 25%;
+    padding: 1% 0;
+}
+
+button.active,
+button:active {
+    background-color: blue;
+}
+
+/* =========================================================
+   VIDEO CONTROLS
+   ========================================================= */
+
+.step-vid>.vid-cntrl-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+
+    position: relative;
+
+    /* pull controls closer to the video */
+    margin-top: -3px;
+
+    z-index: 2;
+
+    height: 18px;
+    max-height: 18px;
+
+    background: rgba(0, 0, 0, 0.72);
+
+    padding: 2px 4px;
+
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 3px;
+}
+
+
+.vid-cntrl-btns>button {
+    position: relative;
+
+    z-index: 2;
+
+    height: 16px;
+    max-height: 16px;
+
+    min-width: 28px;
+    width: auto;
+
+    flex: 0 0 auto;
+
+    padding: 0 5px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    color: goldenrod;
+
+    font-size: 10px;
+
+    line-height: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    border-radius: 2px;
+}
+
+
+/* enlarged video controls stay compact */
+.step-vid.enlarge .vid-cntrl-btns,
+.step-vid.first-vid-enlarge .vid-cntrl-btns {
+    margin-top: -2px;
+
+    height: 16px;
+    max-height: 16px;
+
+    background: rgba(0, 0, 0, 0.78);
+}
+
+
+.step-vid.enlarge .vid-cntrl-btns>button,
+.step-vid.first-vid-enlarge .vid-cntrl-btns>button {
+    height: 14px;
+    max-height: 14px;
+
+    min-width: 24px;
+
+    padding: 0 4px;
+
+    font-size: 9px;
+
+    line-height: 12px;
+}
+
+
+button.active,
+button:active {
+    background-color: blue;
+}

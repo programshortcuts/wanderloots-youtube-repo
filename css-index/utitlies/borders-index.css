@@ -1,0 +1,17 @@
+/* borders.css */
+.main-container>.side-bar {
+    border-right: 1px solid black;
+    border-top: none !important;
+}
+.sub-topics-container {
+    border: 1px solid white;
+}
+
+.sub-topics-container .drop-down {
+    border: none;
+}
+.resource {
+    border: 1px solid black;
+}
+border-right: 1px solid black;
+    border-top: none !important;

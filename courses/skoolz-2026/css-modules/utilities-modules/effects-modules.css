@@ -1,0 +1,64 @@
+/* Sidebar feedback follows real focus or a pending Next/Previous injection. */
+:root {
+    color-scheme: light;
+    --module-focus-bg: rgba(101, 157, 152, 0.5);
+    --module-code-bg: rgb(135, 139, 140);
+}
+
+.dark-mode .step-float:focus {
+    background-color: rgb(34, 63, 73);
+}
+
+.side-bar-links a:focus,
+.side-bar-links a.lesson-button-injecting,
+.side-bar-links a.sideLinkChange,
+.side-bar-links a.highlight,
+.side-bar-links a.active {
+    background-color: var(--module-focus-bg);
+    border-color: currentColor;
+    outline: none;
+}
+
+#mainTargetDiv:focus-visible,
+#navTitle:focus-visible,
+#sideBarBtn:focus-visible,
+button:focus-visible,
+.copy-code:focus-visible,
+.step-txt a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: -2px;
+}
+
+.copy-code:active,
+.copy-code:focus {
+    /* background-color: rgb(34, 63, 73); */
+    box-shadow: 0 0px 4px 4px rgb(34, 63, 73);
+    box-shadow: 1px 1px 4px 4px rgb(135, 151, 156);
+    border: 5px solid blue !important;
+    border-radius: 8px !important;
+    /* background-color: blue; */
+}
+
+.step-float:focus {
+    outline: none;
+    box-shadow: 2px 2px 10px lightblue;
+    background-color: rgb(126, 139, 144);
+    border-color: lightcyan;
+}
+
+
+
+
+.step-float.step-clicked {
+    box-shadow: 0 0 2px 2px rgb(55, 55, 123);
+}
+
+.inject-content-btns-container button:active,
+.inject-content-btns-container button:focus {
+    background: whitesmoke !important;
+    color: black;
+}
+
+.inject-content-btns-container button:active {
+    border: 2px solid black;
+}

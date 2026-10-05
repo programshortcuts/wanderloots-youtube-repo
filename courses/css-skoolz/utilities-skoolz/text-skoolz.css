@@ -1,0 +1,7 @@
+.modules li a:visited {
+    color: inherit;
+}
+
+.modules li a {
+    text-decoration: none;
+}

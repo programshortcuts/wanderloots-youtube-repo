@@ -1,0 +1,105 @@
+/* dark-mode-colorCode.css */
+.dark-mode .page-header-links a:active,
+.page-header-links a:focus {
+    color: whitesmoke !important;
+}
+
+.dark-mode .step-float:active,
+.dark-mode .step-float:focus {
+    background-color: rgb(34, 63, 73);
+    box-shadow: 2px 2px 10px lightblue;
+    border: 2px solid lightcyan;
+    /* box-shadow: 2px 2px 10px rgb(0, 8, 255); */
+}
+
+:root {
+    --bg-primary-db: #201d1d;
+    --font-primary-db: whitesmoke;
+}
+
+.dark-mode {
+    background-color: var(--bg-primary-db);
+    color: var(--font-primary-db)
+}
+
+.dark-mode .page-header {
+    background-color: var(--bg-primary-db);
+}
+
+.dark-mode .side-bar a:active,
+.dark-mode .side-bar a:focus,
+.dark-mode .step:active,
+.dark-mode .step:focus {
+    /* font-style: bold; */
+    /* background-color: blue; */
+    /* font-weight: 800; */
+    /* color: white; */
+    background-color: rgb(0, 0, 0, 0) !important;
+}
+
+.dark-mode #mainLinksContainer {
+    color: var(--font-primary-db);
+    background-color: var(--bg-primary);
+}
+
+.dark-mode>nav.section-lesson-title {
+    /* background-color: var(--bg-primary-db); */
+}
+
+.dark-mode .side-bar {
+    background-color: var(--bg-primary);
+}
+
+.dark-mode .side-bar * {
+    color: var(--font-primary-db) !important;
+}
+
+.dark-mode .section-container>.section {
+    color: var(--font-primary-db);
+}
+
+.dark-mode a {
+    color: white;
+}
+
+/* .dark-mode, */
+h4 .dark-mode p {
+    color: whitesmoke;
+}
+
+.dark-mode #nav-section-lesson-titles {
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    background-color: var(--bg-primary)
+}
+
+
+.dark-mode #sideBarBtn {
+    /* color: white; */
+}
+
+.dark-mode .sidebarbtn-fallback-img {
+    border: 1px solid whitesmoke !important;
+}
+
+/* .dark-mode .code-container, */
+.dark-mode .code-container>.copy-code {
+    background-color: var(--code-bg-primary);
+    /* color: white; */
+}
+
+.dark-mode #navTitle:active,
+.dark-mode #navTitle:focus,
+.dark-mode #sideBarBtn:active,
+.dark-mode #sideBarBtn:focus {
+    border: 2px solid black !important;
+    /* outline: ; */
+}
+
+.dark-mode .m {
+    /* text-shadow: 0 1px 1px lightslategray; */
+    color: rgb(255, 100, 255);
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 120%;
+}

@@ -1,0 +1,22 @@
+/* layout-skoolz.css */
+.modules {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.modules li {
+    flex: 0 0 25%;
+    margin-right: 2%;
+    /* min-width: 0; */
+}
+
+.modules a,
+.modules a img {
+    display: block;
+    width: 100%;
+}
+
+.modules a img {
+    height: auto;
+}

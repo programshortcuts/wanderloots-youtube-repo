@@ -1,0 +1,83 @@
+/* responsive-modules.css */
+/* Keep the established step layout, while constraining wide media and code. */
+#mainTargetDiv img,
+#mainTargetDiv video,
+.tutorial-link-img-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.step-float>.imgs-container {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.step-float>.imgs-container>* {
+    flex: 1 1 12rem;
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Nested cards have less room than a full lesson, even on a wide screen. */
+.step-floats-container>.step-float>.step-img:not(.enlarge):not(.first-vid-enlarge),
+.step-floats-container>.step-float>.step-vid:not(.enlarge):not(.first-vid-enlarge) {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 0.75rem;
+    float: none;
+}
+
+@media (min-width: 721px) {
+    .step-float .code-container {
+        min-width: 45%;
+    }
+}
+
+@media (max-width: 720px) {
+    #mainTargetDiv {
+        --lesson-gutter: 0.5rem;
+    }
+
+
+    .page-header {
+        padding: 0.5rem;
+    }
+
+    .page-header-links {
+        gap: 0.4rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .tutorial-link-img-container {
+        width: 4rem;
+    }
+
+
+    .no-float {
+        flex-direction: column !important;
+    }
+
+    .step-float>.step-img:not(.enlarge):not(.first-vid-enlarge),
+    .step-float>.step-vid:not(.enlarge):not(.first-vid-enlarge),
+    .step-floats-container>.step-float>.step-img:not(.enlarge):not(.first-vid-enlarge),
+    .step-floats-container>.step-float>.step-vid:not(.enlarge):not(.first-vid-enlarge) {
+        width: 100%;
+        max-width: 18.75rem;
+        margin: 0 0 0.75rem;
+        float: none;
+    }
+
+    .step-float>.step-vid:not(.enlarge):not(.first-vid-enlarge)>video,
+    .step-float>.step-img:not(.enlarge):not(.first-vid-enlarge)>img {
+        max-height: 15.625rem !important;
+    }
+
+    .step-floats-container {
+        flex-direction: column;
+    }
+
+    .step-floats-container>.step-float {
+        flex-basis: auto;
+    }
+}

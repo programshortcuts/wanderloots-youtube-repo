@@ -1,0 +1,165 @@
+/* interactions-modules.css */
+/* =========================================================
+   ENLARGED IMAGE / VIDEO
+   Page remains visible behind media
+   ========================================================= */
+
+.step-img.enlarge,
+.step-vid.enlarge,
+.step-img.first-vid-enlarge,
+.step-vid.first-vid-enlarge {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+
+    width: min(94vw, 72rem);
+    max-width: 94vw;
+
+    height: auto;
+    max-height: 92dvh;
+
+    margin: 0;
+    padding: 0;
+
+    float: none;
+
+    background: transparent;
+
+    box-shadow: none;
+
+    border: none;
+    border-radius: 0;
+
+    overflow: auto;
+}
+
+
+/* =========================================================
+   MEDIA INSIDE ENLARGED CONTAINER
+   ========================================================= */
+
+.step-img.enlarge>img,
+.step-img.first-vid-enlarge>img,
+.step-vid.enlarge>video,
+.step-vid.first-vid-enlarge>video {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    max-height: 80dvh !important;
+
+    object-fit: contain;
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   SMALLER SCREENS
+   ========================================================= */
+
+@media (max-width: 960px) {
+
+    .step-img.enlarge,
+    .step-vid.enlarge,
+    .step-img.first-vid-enlarge,
+    .step-vid.first-vid-enlarge {
+        width: 97vw;
+        max-width: 97vw;
+
+        max-height: 94dvh;
+
+        margin: 0;
+        padding: 0;
+
+        background: transparent;
+
+        box-shadow: none;
+
+        border: none;
+        border-radius: 0;
+
+        overflow: auto;
+    }
+
+    .step-img.enlarge>img,
+    .step-img.first-vid-enlarge>img,
+    .step-vid.enlarge>video,
+    .step-vid.first-vid-enlarge>video {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        max-height: 86dvh !important;
+
+        object-fit: contain;
+
+        background: transparent;
+    }
+}
+
+
+/* =========================================================
+   PHONE SIZE
+   ========================================================= */
+
+@media (max-width: 720px) {
+
+    .step-img.enlarge,
+    .step-vid.enlarge,
+    .step-img.first-vid-enlarge,
+    .step-vid.first-vid-enlarge {
+        width: 98vw;
+        max-width: 98vw;
+
+        max-height: 96dvh;
+
+        margin: 0;
+        padding: 0;
+
+        background: transparent;
+
+        box-shadow: none;
+
+        border: none;
+        border-radius: 0;
+
+        overflow: auto;
+    }
+
+    .step-img.enlarge>img,
+    .step-img.first-vid-enlarge>img {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        max-height: 91dvh !important;
+
+        object-fit: contain;
+
+        background: transparent;
+    }
+
+    .step-vid.enlarge>video,
+    .step-vid.first-vid-enlarge>video {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        max-height: calc(94dvh - 48px) !important;
+
+        object-fit: contain;
+
+        background: transparent;
+    }
+}

@@ -1,0 +1,71 @@
+/* vid-cntrl-btn.css */
+/* ========================= STEP VIDEO WRAPPER
+========================= */
+.step-vid {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+/* ========================= VIDEO
+========================= */
+.step-vid video {
+    width: 100%;
+    display: block;
+}
+/* ========================= CONTROLS (NOW BELOW VIDEO)
+========================= */
+.vid-cntrl-btns {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: auto;
+
+    width: 100%;
+    background-color: black;
+    border-radius: 6px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.vid-cntrl-btns>button {
+    flex: 1;
+    position: relative;
+    z-index: 3;
+    pointer-events: auto;
+
+    /* background: transparent; */
+    /* background-color: var(--bg-clr); */
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+}
+
+/* hover feedback */
+.vid-cntrl-btns>button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   ENLARGED STATE (NO LAYOUT CHAOS)
+========================= */
+
+.step-vid.active {
+    outline: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* optional: keep visual emphasis */
+.step-vid.active video {
+    transform: scale(1.02);
+}
+

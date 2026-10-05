@@ -1,0 +1,44 @@
+/* components/page-header.css */
+.page-header {
+    /* padding: 0.75rem 1rem; */
+    background-color: inherit;
+    position: sticky;
+    top: 0%;
+    height: 5vh;
+    z-index: 9999;
+}
+
+.page-header-links {
+    display: flex;
+    /* height: 90%; */
+    height: 100%;
+}
+
+.page-header-links a:active,
+.page-header-links a:focus {
+    color: black;
+}
+
+.page-header-links a {
+    display: inline-flex;
+    height: 100%;
+    flex-basis: 25%;
+    border: 1px solid darkgray;
+    border-bottom: none;
+    color: darkgray;
+    border-top: none;
+}
+
+.tutorial-link-img-container {
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+}
+
+.tutorial-link-img-container img {
+    max-height: 150px;
+    max-width: 100px;
+}

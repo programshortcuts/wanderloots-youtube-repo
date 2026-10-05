@@ -1,0 +1,49 @@
+<!-- 02.html -->
+<div id="targetDivInjected">
+    <header class="header-colorCode-lesson">
+        <h3 id="lessonTitle">3 - basic chatbot script</h3>
+    </header>
+    <div class="main-container-colorCode">
+        <div class="steps-container">
+            <!-- 01  -->
+            <div  tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=d0o89z134CQ"
+                data-timestamp="351">
+                <div class="step-img ">
+                    <img loading="lazy" src="side-bar-links-pages/03/images/01.png" alt="">
+                </div>
+                <div class="step-txt">
+                    <h4>01 - import / use  the model</h4>
+                    <p>
+                        import model into script, use model name <code class="go">llama3</code> for arg,
+                        to imported instance.
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+model = OllamaLLM(model=<span class="go">"llama3"</span>)</code>
+                    </div>
+                    <p>
+                        To use the model instance in script, incoke the <code class="o">invoke()</code> function
+                        on model instance, pass into variable like <code class="ws">result</code>
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+<span class="ws">result</span> = model.<span class="o">invoke(</span>input="hey what's up"<span class="o">)</span></code>
+                    </div>
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+from langchain_ollama import OllamaLLM
+
+model = OllamaLLM(model="llama3")
+result = model.invoke(input="hey what up")
+print(result)</pre>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            
+
+        </div>
+    </div>
+</div>

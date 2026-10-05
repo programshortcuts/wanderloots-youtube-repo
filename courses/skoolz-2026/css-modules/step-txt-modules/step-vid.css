@@ -1,0 +1,28 @@
+/* step-vid.css */
+.step-vid {
+    float: right;
+    height: fit-content;
+    width: 45%;
+    overflow: hidden;
+    border: 1px solid #787878;
+    border-radius: 4px;
+}
+
+.step-vid>video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+}
+
+.step-float>.step-vid>video {
+    z-index: 0;
+    position: relative;
+    transition: all 0.025s ease;
+}
+
+.step-vid.video-paused-at-end {
+    outline: 2px solid rgba(80, 150, 255, 0.8);
+    outline-offset: -2px;
+}

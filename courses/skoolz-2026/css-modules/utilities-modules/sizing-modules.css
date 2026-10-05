@@ -1,0 +1,43 @@
+.page-wrapper {
+    height: 100vh;
+    height: 100dvh;
+}
+
+.page-header-links {
+    min-width: 0;
+}
+
+main.main-container {
+    min-height: 0;
+    min-width: 0;
+}
+
+main.main-container.collapsed {
+    --lesson-width: 100%;
+}
+
+img {
+    max-height: 200px;
+}
+
+.nav-lesson-title {
+    font-size: 50%;
+}
+
+.nav-lesson-title h1 {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+}
+
+.tutorial-link-img-container a {
+    max-width: 100%;
+}
+
+.tutorial-link-img-container img {
+    width: 100%;
+}
+
+#darkModeBtn {
+    max-width: 100%;
+}

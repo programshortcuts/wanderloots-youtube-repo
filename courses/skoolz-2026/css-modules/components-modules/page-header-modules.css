@@ -1,0 +1,7 @@
+/* Course counterpart of topics/css/components/side-bar.css. */
+.page-header  {
+    /* background-color: rgba(0,0,0,0); */
+}
+.page-header a {
+    text-decoration: none;
+}

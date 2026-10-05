@@ -1,0 +1,19 @@
+/* step-vid.css */
+.step-vid {
+    float: right;
+    height: fit-content;
+    height: inherit;
+    width: 45%;
+}
+
+.step-vid>video {
+    width: 98%;
+    max-height: 28vh;
+
+}
+
+.step-float>.step-vid>video {
+    z-index: 0;
+    position: relative;
+    transition: all 0.025s ease;
+}

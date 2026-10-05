@@ -1,0 +1,141 @@
+/* toggle-img-sizes.css */
+
+
+/* =========================================================
+   NORMAL MEDIA
+   ========================================================= */
+
+.step-img,
+.step-vid {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   PRE COPY-CODE
+
+   Only <pre class="copy-code"> sits above normal media.
+   ========================================================= */
+
+pre.copy-code {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   PLAYING VIDEO
+
+   Playing video sits above pre.copy-code.
+   ========================================================= */
+
+.step-vid.is-playing {
+    z-index: 3;
+}
+
+
+/* =========================================================
+   ENLARGED MEDIA
+
+   Enlarged media always wins.
+   ========================================================= */
+
+.step-img.enlarge,
+.step-vid.enlarge,
+.step-img.first-vid-enlarge,
+.step-vid.first-vid-enlarge {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -80%) scale(1.5);
+
+    z-index: 999999 !important;
+
+    max-width: 400px;
+
+    object-fit: contain;
+
+
+}
+
+
+
+
+
+/* =========================================================
+   ENLARGED VIDEO WRAPPER
+
+   Prevent normal .step-vid layout rules from hiding or
+   collapsing the enlarged video.
+   ========================================================= */
+
+.step-vid.enlarge,
+.step-vid.first-vid-enlarge {
+    height: auto;
+}
+
+
+/* =========================================================
+   ENLARGED VIDEO
+   ========================================================= */
+
+.step-vid.enlarge>video,
+.step-vid.first-vid-enlarge>video {
+    width: 100%;
+    height: auto;
+
+    max-height: none;
+
+    object-fit: contain;
+
+    display: block;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   ENLARGED IMAGE
+   ========================================================= */
+
+.step-img.enlarge>img,
+.step-img.first-vid-enlarge>img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================================
+   COPY ANIMATION
+
+   Keep existing behavior.
+   ========================================================= */
+
+.copied {
+    position: relative;
+
+    border: 1px solid whitesmoke;
+
+    box-shadow:
+        0 0 3px 2px whitesmoke;
+
+    background-color: whitesmoke;
+
+    color: black;
+
+    z-index: 2;
+
+    transform: scale(1.09);
+
+    transition: all .8s;
+}

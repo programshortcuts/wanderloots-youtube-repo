@@ -1,0 +1,6 @@
+/* responsive-skoolz.css */
+@media (max-width: 750px) {
+    .modules li {
+        flex-basis: 30% !important;
+    }
+}

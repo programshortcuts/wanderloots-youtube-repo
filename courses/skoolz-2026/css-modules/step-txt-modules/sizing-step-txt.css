@@ -1,0 +1,40 @@
+/* step-txt/step-txt.css */
+
+.code-container {
+    width: fit-content;
+    min-width: 250px;
+    height: fit-content;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 20vh;
+}
+.step-float ul,
+.step-float ol{
+    width: 100%;
+}
+.code-container>.copy-code {
+    width: 100%;
+    height: 100%;
+}
+
+.step-float {
+    height: fit-content;
+    min-height: 0;
+}
+
+.step-float>.step-img,
+.step-float>.step-vid {
+    /* Leave text room when possible, and keep media visible in narrow cards. */
+    width: min(31.25rem, max(18.75rem, calc(100% - 19rem)));
+    max-width: calc(100% - 1rem);
+}
+
+.step-vid>video,
+.step-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.step-img>img {
+    max-height: 500px !important;
+}

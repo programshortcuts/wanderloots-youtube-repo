@@ -1,0 +1,56 @@
+/* colors.css */
+:root {
+    /* --code-bg-primary: rgb(140, 140, 135); */
+    --code-bg-primary: rgb(135, 139, 140);
+
+}
+
+
+
+.nav-mode-colors {
+    background: rgb(93, 104, 125);
+}
+
+.nav-mode-colors a {
+    color: whitesmoke !important;
+}
+
+nav.section-lesson-title {
+    box-shadow: 0 0 1px 1px white;
+    background-color: inherit;
+}
+
+body>nav.section-lesson-title>h1#title {
+    color: black;
+    box-shadow: 0 0 1px 1px white;
+    border: 1px solid black;
+}
+
+main>.side-bar {
+    color: black;
+    box-shadow: 0 1px 1px 1px white;
+}
+
+.side-bar ul li a,
+.side-bar ul li a:visited {
+    color: black;
+}
+
+.code-container {
+    background-color: var(--code-bg-primary);
+}
+
+.code-container>.copy-code {
+    background-color: var(--code-bg-primary);
+    color: black;
+    /* color: rgb(70, 92, 160); */
+    /* color: rgb(78, 85, 65); */
+}
+
+#sideBarBtn {
+    color: black;
+}
+
+.side-bar-links .side-topic-title {
+    color: rgb(112, 107, 107) !important;
+}

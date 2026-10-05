@@ -1,0 +1,13 @@
+a.resource:visited {
+    color: blue;
+}
+
+.drop-topic:active,
+.drop-topic:focus {
+    box-shadow: 2px 0 4px 3px blue;
+}
+
+.resource:active,
+.resource:focus {
+    box-shadow: 2px 2px 8px 6px lightseagreen;
+}

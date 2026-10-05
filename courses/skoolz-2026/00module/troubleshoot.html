@@ -1,0 +1,195 @@
+<!-- troubleshoot.html -->
+<div id="targetDivInjected">
+    <header class="header-colorCode-lesson">
+        <h3 class="" id="lessonTitle">trouble shoot truforge</h3>
+    </header>
+    <div class="main-container-colorCode">
+        <div class="steps-container">
+            <!-- 01 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="10">
+                <h4>01- troubeshoot trueforge</h4>
+                <div class="step-img">
+                    <img loading="lazy" src="../../../topics/agents/agents-26/images/01-trouble.png" alt="">
+                </div>
+                <div class="step-txt ">
+                    <p>
+                        This was a pain in the ass, had to install, made a directory called <code>tools-ai</code>
+                        cloned a repo for mcp made by Natham Brake from mozilla repo
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/njbrake"
+                            class="">https://github.com/njbrake </a>,
+                        this is the repo link,
+
+                        i cloned it in same directory as tools-ai where i'm going to contain it
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    cd ~/tools-ai 
+                        </code>
+                    </div>
+                    <p>or wherever then</p> clone
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    git clone https://github.com/njbrake/filesystem-mcp-server.git
+                        </code>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 02 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="10">
+                <div class="step-img">
+                    <img loading="lazy" src="../../../topics/agents/agents-26/images/02.png" alt="">
+                </div>
+                <div class="step-txt ">
+                    <h4>02- uv sync
+                        <p>
+                            Next step is to uv sync but that doesn't work on this intel mac so i believe i executed
+                            these exports
+                        </p>
+                        <div class="code-container ">
+                            <code tabindex="0" class="copy-code ">
+                export OPENSSL_DIR="$(brew --prefix openssl@3)"
+                    </code>
+                        </div>
+                        <div class="code-container ">
+                            <code tabindex="0" class="copy-code ">
+                export PKG_CONFIG_PATH="$(brew --prefix openssl@3)/lib/pkgconfig"
+                    </code>
+                        </div>
+                        <div class="code-container ">
+                            <code tabindex="0" class="copy-code ">
+                export LDFLAGS="-L$(brew --prefix openssl@3)/lib"
+
+                    </code>
+                        </div>
+                        <div class="code-container ">
+                            <code tabindex="0" class="copy-code ">
+                    export CPPFLAGS="-I$(brew --prefix openssl@3)/include"
+                        </code>
+                        </div>
+                        <p>
+                            Now change into when you run
+                            ,</p>
+                        <div class="code-container ">
+                            <code tabindex="0" class="copy-code ">
+                    cd ~/tools-ai/filesystem-mcp-server
+                        </code>
+                        </div>
+                        <p>run </p>
+                        <div class="code-container ">
+                            <code tabindex="0" class="copy-code ">
+                    uv sync
+                        </code>
+                        </div>
+                        <p>
+                            and you shoudl see this </p>
+                </div>
+            </div>
+
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="10">
+                <h4>03- Start MCP</h4>
+                <div class="step-vid">
+                    <video preload="none" playsinline webkit-playsinline poster="../../../topics/agents/agents-26/images/03.png"
+                        src="../../../topics/agents/agents-26/images/03.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+
+                <div class="step-txt ">
+                    <p>
+                        Be in filesystem-mcp-server dir and run command, and place
+                        name and path of directory you want ai to have access to
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                cd ~/tools-ai/filesystem-mcp-server
+                    </code>
+                    </div>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    uv run filesystem-mcp \
+  --allowed-root "/Users/tt/tools-ai/<span class="m">work-ai-dirs</span> " \
+  --port 8123
+                        </code>
+                    </div>
+                    <p>
+                        The server for this is now here
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                        http://127.0.0.1:8123/mcp
+
+                    
+                        </code>
+                    </div>
+                    <p>
+                        <span class="t"> Add this to </span>"Connectors" in true forge for agent
+                    </p>
+                </div>
+            </div>
+            <!-- 04 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="10">
+                <h4>04- Go To true forge</h4>
+                <!-- <div class="step-vid">
+                    <video preload="none" playsinline webkit-playsinline poster="../../../topics/agents/agents-26/images/03.png"
+                        src="../../../topics/agents/agents-26/images/03.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div> -->
+
+                <div class="step-txt ">
+                    <p>
+                        paste in the url from previous step of terminal running
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    http://127.0.0.1:8123/mcp
+                        </code>
+                    </div>
+                    <p>
+                        Give it name, description connect.
+                    </p>
+                </div>
+            </div>
+            <!-- 05 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="10">
+                <h4>05- Ask model if it can see directory</h4>
+                <!-- <div class="step-vid">
+                    <video preload="none" playsinline webkit-playsinline poster="../../../topics/agents/agents-26/images/03.png"
+                        src="../../../topics/agents/agents-26/images/03.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div> -->
+
+                <div class="step-txt ">
+                    <p>
+                        paste in the url from previous step of terminal running
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    http://127.0.0.1:8123/mcp
+                        </code>
+                    </div>
+                    <p>
+                        Give it name, description connect.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

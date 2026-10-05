@@ -1,0 +1,13 @@
+/* step-img.css */
+.step-img {
+    float: right;
+    /* width: 45%; */
+}
+
+.step-img>img {
+    position: relative;
+    /* width: 98%; */
+    transition: all 0.025s ease;
+    /* width: 98%; */
+
+}

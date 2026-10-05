@@ -1,0 +1,7 @@
+.topic>a.drop-topic,
+.drop-sub-topic {
+    text-decoration: none;
+}
+.drop-snips>li {
+    list-style: none
+}

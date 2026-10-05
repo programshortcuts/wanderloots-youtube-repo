@@ -1,0 +1,59 @@
+/* position.css */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.page-wrapper {
+    position: relative;
+    /* transform: translateX(0); */
+    overflow-x: hidden;
+}
+
+.main-container {
+    position: relative;
+}
+
+.side-bar {
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start;
+
+    /* ADD THIS */
+    z-index: 9998;
+}
+
+
+.side-bar-links-container {}
+
+.side-bar-links-container ul {
+    /* position: fixed; */
+    /* top: 0; */
+}
+
+.page-wrapper>nav.nav-lesson-title {
+    position: fixed;
+    top: 0%;
+}
+
+.page-wrapper>.main-container {
+    top: 10%;
+}
+
+#sideBarBtn {
+    position: absolute;
+    z-index: 9999;
+    top: 5%;
+    left: 5%;
+}
+
+.inject-content-btns-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}

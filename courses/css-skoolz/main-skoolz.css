@@ -1,0 +1,19 @@
+/* main-skoolz.css */
+@import url('./responsive-skoolz.css');
+
+/* utilities */
+@import url('utilities-skoolz/borders-skoolz.css');
+@import url('utilities-skoolz/effects-skoolz.css');
+@import url('utilities-skoolz/layout-skoolz.css');
+@import url('utilities-skoolz/spacing-skoolz.css');
+@import url('utilities-skoolz/text-skoolz.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}

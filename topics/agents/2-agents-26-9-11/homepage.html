@@ -1,0 +1,122 @@
+<!-- homepage.html -->
+<div id="targetDivInjected">
+    <header class="header-colorCode-lesson">
+        <h3 class="" id="lessonTitle">Home page </h3>
+    </header>
+    <div class="main-container-colorCode">
+        <div class="steps-container">
+            <!-- 01 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="10">
+                <h4>01- troubeshoot trueforge</h4>
+                <div class="step-img">
+                    <img loading="lazy" src="images/01-trouble.png" alt="">
+                </div>
+                <div class="step-txt ">
+                    <p>
+                        This was a pain to set up, These are the commands to get it started after downloading everything
+                    </p>
+                    <p>
+                        <span class="t">Change to directory, you want ai to have access to </span>
+
+
+                    </p>
+
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    cd ~/tools-ai 
+                        </code>
+                    </div>
+                    <p>
+                        download MCP Server, from njblake here
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/njbrake/filesystem-mcp-server">https://github.com/njbrake/filesystem-mcp-server</a>
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    git clone https://github.com/njbrake/filesystem-mcp-server.git
+                        </code>
+                    </div>
+                    <p>
+                        Start trueforge with this command
+
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    npx @truefoundry/trueforge@latest
+                        </code>
+                    </div>
+                    <p>
+                        I made alias trueforge = npx ... in my .zshrc
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    alias trueforge='npx @truefoundry/trueforge@latest'
+
+                        </code>
+                    </div>
+
+
+                </div>
+            </div>
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="10">
+                <h4>01- troubeshoot trueforge MCP Server</h4>
+                <div class="step-img">
+                    <img loading="lazy" src="images/03.png" alt="">
+                </div>
+                <div class="step-txt ">
+                    <p>
+                        Then change into the file filesystem-mcp-server, ( I put in same directory i want ai to only
+                        have access to )
+                        for me it's this and run
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    cd ~/tool-ai/filesystem-mcp-server
+                        </code>
+                    </div>
+                    <h3><span class="t">FIRST TIME</span></h3>
+                    <p>
+                        run</p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    uv sync removed.
+                        </code>
+                    </div>
+                    <p>
+                        but you only need uv sync again if the dependencies changed or the virtual environment was
+                        removed.
+                    </p>
+                    <div class="code-container ">
+                        <pre tabindex="0" class="copy-code ">
+uv run filesystem-mcp \
+  --allowed-root "/Users/tt/tools-ai/work-ai-dirs" \
+  --port 8123
+
+                        </pre>
+                    </div>
+                    <p>
+                        <span class="t">If this NOT working</span> look at
+                        <a href="#trouble">trouble shoot mcp page</a> in sidebar for export pages
+                    </p>
+                    <p>
+                        Use that url,
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+
+                        </code>
+                    </div>
+                    <p>
+                        Connect the server in true forge
+                    </p>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

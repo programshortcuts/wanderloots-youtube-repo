@@ -1,0 +1,160 @@
+<!-- 07.html -->
+<div id="targetDivInjected">
+    <header class="header-colorCode-lesson">
+        <h3 class="" id="lessonTitle">6-02. Create Agent - configure models</h3>
+    </header>
+    <div class="main-container-colorCode">
+        <div class="steps-container">
+            <!-- 01 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="600">
+                <h4>02- trueforge</h4>
+                <div class="step-vid">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/07/images/01.png"
+                        src="side-bar-links-pages/07/images/01.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+                <div class="step-txt ">
+                    <p>
+                        At server:
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code t">
+                http://localhost:8790
+                    </code>
+
+                    </div>
+                    <p>
+                        With Trueforge running, click <span class="m">gear icon</span> bottom left, here you will see
+                        popular subscription
+                        based ones you can api key to and use here, OR,
+                    </p>
+
+                </div>
+            </div>
+            <!-- 02 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="608">
+                <h4>02- Add Custom Provider</h4>
+
+                <div class="step-txt ">
+                    <p>
+                        Click <span class="o">"Add Custom Provider"</span>,
+                    </p>
+
+                </div>
+                <div class="imgs-container">
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/07/images/02.png" alt="">
+                    </div>
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/07/images/02-b.png" alt="">
+                    </div>
+                </div>
+                <div class="step-txt">
+                    <p>
+                        You need to use ollama, i checked ollama list i have qwen3:6latest
+                    </p>
+                    <p>
+                        Checkout ollama tutorials, here , then run ollama
+                    </p>
+                    <p>
+                        <a translate="0" data-nav-target="mikeyVibeCoding" tabindex="0" target="_blank"
+                            href="https://programshortcuts.github.io/mikey-vibe-coding-repo/topics/01-ollama-full-tutorial-begin/index-mikey.html">Mikey
+                            Vibe Coding
+                            <img src="../../../../images/mikeyVibeCodingOllamFullBegin.jpeg" alt=""></a>
+                        and or <a translate="0" data-nav-target="techWithTimLLMLocal" tabindex="0" target="_blank"
+                            href="https://programshortcuts.github.io/tech-with-tim-ai-repo/topics/ollama/01-ollama-mcp-26/01-ollama-mcp-26.html">
+                            <img src="../../01-ollama-mcp-26/images/twt-ollama-mcp-26.jpeg" alt=""> tech with tim
+                            LLM Local</a>
+                    </p>
+                </div>
+            </div>
+            <!-- 03 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="610">
+                <h4>03- Fill out <span class="o">Add Custome Provider"</span> Ollam Server</h4>
+                <div class="step-vid">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/07/images/03.png"
+                        src="side-bar-links-pages/07/images/03.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+                <div class="step-txt ">
+                    <p>
+                        The Ollama server runs at
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    http://localhost:11434<span class="m">/v1</code>
+                        </code>
+                    </div>
+                    <p>
+                        Make sure to add <code class="m">/v1</code> to end
+                    </p>
+                    <p>
+                        See what models you have
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    ollama list
+                        </code>
+                    </div>
+                    <p>
+                        Choose one enter in the <span class="o">Add Custom Provider</span>
+                    </p>
+                    <p>
+                        Click new chat top left and test to see if model and server are working
+                    </p>
+                </div>
+
+
+            </div>
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=HzGOWq5UyjY"
+                data-timestamp="610">
+                <h4>04- Add Custome Provider" <span class="rb">LM Studio Server</span> </h4>
+                
+                <div class="step-txt ">
+                    <p>
+                        You can connect to LM Studio server too 
+                    </p>
+                    <div class="code-container ">
+                        <code tabindex="0" class="copy-code ">
+                    http://127.0.0.1:1234<span class="m">/v1</span>
+                        </code>
+                    </div>
+                    <p>
+                        <span class="t">Don't forget</span> <code class="m">/v1</code>
+                    </p>
+                </div>
+                <div class="imgs-container">
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/07/images/04.png" alt="">
+                    </div>
+                    <div class="step-vid">
+                        <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/07/images/04-b.png"
+                            src="side-bar-links-pages/07/images/04-b.mov">
+                        </video>
+                        <div class="vid-cntrl-btns">
+                            <button class="fwdBtn">&lt;&lt;</button>
+                            <button class="playbtn">></button>
+                            <button class="rwdBtn">>></button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

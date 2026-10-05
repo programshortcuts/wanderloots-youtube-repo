@@ -1,0 +1,55 @@
+/* sizing.css */
+main.main-container {
+    /* width: 100%; */
+    /* height: 100max; */
+}
+
+.main-container>.side-bar {
+    min-width: 200px;
+
+    top: 10vh;
+    height: calc(100vh - 10vh);
+    align-self: flex-start;
+    overflow-y: auto;
+}
+
+.page-wrapper>nav.nav-lesson-title {
+    width: fit-content;
+}
+
+.page-wrapper>nav.nav-lesson-title>h1 {
+    width: 100%
+}
+
+#darkModeBtn {
+    width: fit-content;
+    height: 2vh;
+}
+
+.code-container {
+    width: fit-content;
+}
+
+.code-container>.copy-code {
+    width: 100%;
+    display: block;
+    height: 100%;
+    transition: all .35s;
+}
+
+.main-container-colorCode {
+    width: 100%;
+}
+
+
+
+.inject-content-btns-container {
+
+    height: 4vh;
+    width: 40vw;
+}
+
+.inject-content-btns-container>button {
+    height: 100%;
+    width: 20vw;
+}

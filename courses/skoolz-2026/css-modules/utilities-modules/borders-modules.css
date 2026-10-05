@@ -1,0 +1,8 @@
+/* Sidebar classes represent focus; they must match the actual focus style. */
+.page-header {
+    /* border: 1px solid white */
+}
+
+.code-container {
+    border: none !important;
+}
