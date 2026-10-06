@@ -1,0 +1,10 @@
+/* page-header.css */
+.page-header{
+    display: flex;    
+    justify-content: space-between;
+    
+}
+.page-header img{
+    max-width: 300px;
+    max-height: 250px;
+}

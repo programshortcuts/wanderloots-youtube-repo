@@ -1,0 +1,15 @@
+/* layout.css */
+.main-content{
+    display: flex;
+}
+.main-landing-page{
+    flex-grow: 1;
+}
+.side-bar-btns-container {
+    display: flex;
+}
+.playlists-container
+.vids-container {
+    display: flex;
+    flex-direction: column;
+}

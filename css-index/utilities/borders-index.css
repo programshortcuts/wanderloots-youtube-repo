@@ -1,0 +1,8 @@
+/* layout.css */
+.main-landing-page{
+    border: 1px solid black;
+}
+.side-bar {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}

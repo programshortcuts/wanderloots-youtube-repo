@@ -4,210 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-tech-with-tim-ai-youtube</title>
+    <title>paul-mcwhorter-arduino</title>
     <link rel="stylesheet" href="css-index/main-index.css">
-    <script src="js-index/letterFocus-txt-nums.js" defer></script>
-    <script src="js-index/dark-mode-index.js" defer></script>
-    <script src="js-index/drop-downs-index.js" defer></script>
+    <script type="module" src="js-index/keyboard-nav-index.js" defer></script>
     <meta http-equiv="Content-Security-Policy" content="
-                default-src 'self';
-                script-src 'self';
-                style-src 'self' ;
-                img-src 'self' data:;
-                object-src 'none';
-                base-uri 'none';
+            default-src 'self';
+            script-src 'self' 'unsafe-inline' ;
+            style-src  'self' https://cdn.jsdelivr.net;
+            font-src 'self' https://unpkg.com data:;
+            img-src 'self' data:;
+            frame-src https://www.youtube.com;
+            object-src 'none';
+            base-uri 'none';
+              form-action 'self';
         ">
 </head>
 <body class="dark-mode">
-    <!-- This page has no association with tim and tech with tim , this is documentation i have made personally, 
-         on the info presented in the tutorials and work, please visit their channels, they are amazing-->
-
-    <!-- This script only works initially if inside DOMContentLoaded -->
     <div class="page-wrapper">
         <header class="page-header">
-            <div class="page-title-logo">
-                <h1>AIDocumentation - ai-youtube resources</h1>
-                <img src="images/twi-header-youtube.jpg" alt="">
-                <h2>Tech with Tim</h2>
-                <p>this site has NO Affiliation with tech-with-tim,
-                    this is for personal documentation, and code examples from course
-                </p>
+            <div class="back-links">
+                <a  rel="noopener noreferrer"
+                 data-nav-target="homepageLink" href="https://programshortcuts.github.io/tyler-tomani-2026/">homepage</a>
             </div>
-            <div id="aiLogo" class="page-logo">
-                <span>AI</span>
+            <h1>paul-mcwhorter-arduino</h1>
+            <div class="tutorial-dark-mode-container">
+                <a data-nav-target="tutorialImgLink" rel="noopener noreferrer" target="_blank"
+                    href="https://www.youtube.com/watch?v=fJWR7dBuc18&list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP">
+                    <img src="images/paul-mcwhorter-yt-banner.jpg" alt="">
+                </a>
             </div>
-            <img src="images/youtube-animate-img.webp" alt="">
         </header>
-        <main tabindex="0" id="mainContainer" class="main-container">
-            <div class="topics-container drop-parent">
-                <button tabindex="0" id="courses" class="drop-down" >
-                    
-                    <h2>Courses</h2>
-                </button>
-                <div class="topics drops-snips">
-                    <!-- course -->
-                    <div class="topic-container drop-parent ">
-                        <header id="skoolz" class="">
-                            <!-- <h3>Skoolz</h3> -->
-                        </header>
-                        <ul class="sub-topics-container drop-snips show">
-                            <li>
-                                <a  rel="noopener noreferrer" tabindex="0" id="skoolz26" class="resource"
-                                    href="courses/skoolz-2026/skoolz-2026.html">skoolz-2026
-                                    <img src="courses/skoolz-2026/00module/media/00module.jpg" alt="">
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a  rel="noopener noreferrer" tabindex="0" id="skoolz26" class="resource"
-                                    href="courses/skoolz-2026/skoolz-2026.html">skoolz-2026
-                                    <img src="courses/skoolz-2026/00module/images/00module.jpg" alt="">
-                                </a>
-                            </li> -->
-                            
-                            
-                        </ul>
+        <nav>
+            <div class="playlists-container">
+                <div class="playlist">
+                    <h2>New Arduino tutorials Playlist</h2>
+                    <div class="vids-container">
+                        <a rel="noopener noreferrer" class="vid" href="playlist/New_Arduino_Tutorials/01/01.html"> 
+                            <h3>Arduino Tutorial 1: Setting Up and Programming the Arduino for Absolute Beginners</h3>
+                            <img src="playlist/New_Arduino_Tutorials/01/01.jpeg" alt="">
+                        </a>
+                        <a rel="noopener noreferrer" class="vid">
+                            <h3>Arduino Tutorial 2: Understanding How Light Emitting Diodes (LEDs) Work</h3>
+                            <img src="playlist/New_Arduino_Tutorials/01/01.jpeg" alt="">
+                        </a>
+                        <a rel="noopener noreferrer" class="vid">
+                            <h3>Arduino Tutorial 3: Understanding How Breadboards Work</h3>
+                            <img src="playlist/New_Arduino_Tutorials/01/01.jpeg" alt="">
+                        </a>
+                        <div class="vid">
+                            <p>
+                                Scrape rest ...., into json
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="topics-container drop-parent">
-                <button tabindex="0" id="topics" class="drop-down" >
-                    
-                    <h2 >Topics</h2>
-                </button>
-                <div class="topics drops-snips">
-                    <!-- agents -->
-                    <div class="topic-container drop-parent ">
-                        <header tabindex="0" id="agents" class="drop-down">
-                            <h3>agents</h3>
-                        </header>
-                        <ul class="sub-topics-container drop-snips show">
-                            <li>
-                                <a  rel="noopener noreferrer" tabindex="0" id="aiAgents-26" class="resource"
-                                    href="topics/agents/agents-26/agents-26.html">Ai-agents-26-8-?
-                                    <img src="topics/agents/agents-26/images/agents-2026.jpeg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a  rel="noopener noreferrer" tabindex="0" id="aiAgents-26" class="resource"
-                                    href="topics/agents/2-agents-26-9-11/2-agents-26-9-11.html">2-agents-26-9-11-9-11 (10 mins)
-                                    <img src="topics/agents/2-agents-26-9-11/images/2-agents-26-9-11.jpeg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Codex -->
-                    <div class="topic-container drop-parent">
-                        <header tabindex="0" id="codex" class="drop-down">
-                            <h3>codex</h3>
-                        </header>
-                        <ul class="sub-topics-container drop-snips show">
-                            <li>
-                                <a rel="noopener noreferrer" tabindex="0" id="codexFull01" class="resource"
-                                    href="topics/codex/01-codex/01-codex.html">Codex - Full Course for Beginners
-                                    <img src="topics/codex/01-codex/images/codex.jpeg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- n8n -->
-                    <div class="topic-container drop-parent">
-                        <header tabindex="0" id="n8n" class="drop-down">
-                            <h3>n8n</h3>
-                        </header>
-                        <ul class="sub-topics-container drop-snips show">
-                            <li>
-                                <a rel="noopener noreferrer" tabindex="0" id="tbd" class="resource" href="#">tbd
-                                    <img src="images/youtube-animate-img.webp
-                                        " alt="">
-                                    <sup>TBD</sup>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Ollama -->
-                    <div class="topic-container drop-parent">
-                        <header tabindex="0" id="ollama" class="drop-down">
-                            <h3>Ollama</h3>
-                        </header>
-                        <ul class="sub-topics-container drop-snips  show">
-                            <!-- basics -->
-                            <li class="drop-parent">
-                                <button target="_blank" class="drop-down">basics</button>
-                                <ul class="drop-snips show">
-                                    <li>
-                                        <a rel="noopener noreferrer" tabindex="0" id="ollama01" class="resource "
-                                            href="topics/ollama/01-ollama-mcp-26/01-ollama-mcp-26.html">01
-                                            ollama
-                                            <img src="images/twt-ollama-26.jpeg">
-                                        </a>
-                                    </li>
-    
-    
-                                </ul>
-                            </li>
-                            <!-- local chatbot -->
-                            <li class="drop-parent">
-                                <button target="_blank" class="drop-down">local chatbot</button>
-                                <ul class="drop-snips show">
-                                    <li>
-                                        <a rel="noopener noreferrer" tabindex="0" id="ollamaLocalChatbot01"
-                                            class="resource "
-                                            href="topics/ollama/chatbots/01-ollama-local-chatbot-25/01-ollama-local-chatbot-25.html">01
-                                            ollama Local Chatbot
-                                            <img src="images/twt-ollama-26.jpeg">
-                                        </a>
-                                    </li>
-    
-    
-                                </ul>
-                            </li>
-    
-                        </ul>
-                    </div>
-                    <!-- Panadas -->
-                    <div class="topic-container drop-parent">
-                        <header tabindex="0" id="pandas" class="drop-down">
-                            <h3>Pandas</h3>
-                        </header>
-                        <ul class="sub-topics-container drop-snips  show">
-                            <!--  -->
-                            <li class="drop-parent">
-                                <button target="_blank" class="drop-down">basics</button>
-                                <ul class="drop-snips show">
-                                    <li>
-                                        <a rel="noopener noreferrer" tabindex="0" id="ollama01" class="resource "
-                                            href="topics/pandas/01-learnPandas30/01-learnPandas30.html">01
-                                            Learn Pandas in 30 Minutes
-                                            <img src="topics/pandas/01-learnPandas30/images/LearnPandasIn30Minutes.jpeg">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <nav class="styles-btns">
-            <div class="btn-container">
-                <button id="darkmodeBtn">darkmodeBtn</button>
-                <p>(<span class="lg-txt">⇧</span> + D )</p>
+
             </div>
         </nav>
-        <footer class="footer-header">
-            <div class="main-links">
-                <a rel="noopener noreferrer" tabindex="0" id="backlink" href="
-                        https://programshortcuts.github.io/ai-youtube-repo/">&larr;back (ai-youtube)</a>
-                <a rel="noopener noreferrer" tabindex="0" id="homelink"
-                    href="https://programshortcuts.github.io/tyler-tomani-2026/">Home (main)</a>
-            </div>
-            <div class="main-links">
-                <a rel="noopener noreferrer" tabindex="0" id="codeComandShortcuts" target="_blank" href="https://programshortcuts.github.io/code-cmds-shorts-repo/
-                                                                            "><sub>code comand shortcuts</sub></a>
-
-            </div>
-        </footer>
+        
     </div>
+      
 </body>
-
 </html>

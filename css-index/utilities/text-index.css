@@ -1,0 +1,10 @@
+/* text.css */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 1rem;
+}
+.vid h3{
+    font-display: .7rem;
+}
