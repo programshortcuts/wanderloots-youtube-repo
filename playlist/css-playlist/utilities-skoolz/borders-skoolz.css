@@ -1,0 +1,6 @@
+/* borders-skoolz.css */
+.modules {}
+
+.modules>li {
+    border: 1px solid white;
+}

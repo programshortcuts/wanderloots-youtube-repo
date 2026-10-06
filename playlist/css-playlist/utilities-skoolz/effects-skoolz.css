@@ -1,0 +1,18 @@
+:root {
+    --efx-prm: gray
+}
+
+.modules>li>a:active,
+.modules>li>a:focus {
+    border-right: none;
+    background-color: whitesmoke;
+    color: black !important;
+    font-weight: 999;
+    outline: none;
+    border-left: 1px solid var(--efx-prm);
+    border-top: 1px solid var(--efx-prm);
+    box-shadow: 0 0 1px 1px var(--efx-prm);
+    font-size: 1.2rem;
+    transform: translateX(10%);
+    transform: translateY(-2%);
+}
