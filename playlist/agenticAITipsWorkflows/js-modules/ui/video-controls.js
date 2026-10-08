@@ -501,6 +501,10 @@ The existing click handler still performs the button action.
             );
 
             updatePlayButton(video);
+
+            if (video.currentTime <= 0.01 && video.poster) {
+                resetVideoToPoster(video);
+            }
         }
     );
 
