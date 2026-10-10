@@ -80,14 +80,33 @@ main.main-container {
 #mainTargetDiv {
     grid-column: 2;
     grid-row: 1;
+    box-sizing: border-box;
     min-width: 0;
     min-height: 0;
     width: min(100%, var(--lesson-width));
+    max-width: 100%;
     padding: var(--lesson-gutter, 1rem);
     overflow: auto;
     overscroll-behavior: contain;
     overflow-wrap: anywhere;
     scroll-padding-block: 1rem;
+}
+
+/* Constrain injected content and allow intrinsic-width children to shrink. */
+#mainTargetDiv * {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+#mainTargetDiv pre {
+    white-space: pre-wrap;
+}
+
+#mainTargetDiv table {
+    width: 100%;
+    table-layout: fixed;
 }
 
 /* Injected blocks follow the lesson pane's reference width. */

@@ -75,10 +75,6 @@
     .side-bar {
         max-width: 22vw;
     }
-    .main-landing-container {
-        min-width: 78vw !important;
-        /* background-color: blue; */
-    }
 }
 @media (max-width: 720px) {
     .side-bar {
