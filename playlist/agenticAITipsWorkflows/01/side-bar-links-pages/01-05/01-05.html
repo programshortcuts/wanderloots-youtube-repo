@@ -39,7 +39,7 @@
                         <span class="gr">64,000</span>
                     </p>
                     <p>
-                        To change <span class="gr">Context Window Length</span>, we create a <span class="lpb">Modelfile</span>
+                        To change <span class="gr">Context Window Length</span>, we create a <span class="c">Modelfile</span>
                     </p>
                     <div class="code-container">
                         <pre tabindex="0" class="copy-code">
@@ -59,17 +59,7 @@ ollama create gemma4-64k -f ~/.hermes/cache/scratch/Modelfile</pre>
             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
                 data-timestamp="570"
                 data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
-                <h4>02 Change <strong class="gr">Context Window</strong>, create <span class="lpb">Modelfile</span></h4>
-                <div class="step-vid ">
-                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/01-05/media/01-05-2.png"
-                    src="side-bar-links-pages/01-05/media/01-05-2.mov"></video>
-                    <div class="vid-cntrl-btns">
-                        <button class="fwdBtn">&lt;&lt;</button>
-                        <button class="playbtn">></button>
-                        <button class="rwdBtn">>></button>
-                    </div>
-                </div>
-                    
+                <h4>02 Change <strong class="gr">Context Window</strong>, create <span class="c">Modelfile</span></h4>    
                 <div class="step-txt ">
                     <p>
                         This is where the <span class="gr">Variant</span> is created to copy model with correct <span class="gr">context window </span> size with <span class="c">new name</span>
@@ -79,18 +69,89 @@ ollama create gemma4-64k -f ~/.hermes/cache/scratch/Modelfile</pre>
                     </p>
                     <div class="code-container">
                         <code tabindex="0" class="copy-code">
-printf 'FROM gemma4:e4b\nPARAMETER <span class="gr">num_ctx 64000</span>\n' > /tmp/ <span class="c">gemma4e-64k</span>.Modelfile && ollama create <span class="c">gemma4e-64k</span> -f /tmp/<span class="c">gemma4e-64k</span>.Modelfile </code>
+printf 'FROM gemma4:e4b\nPARAMETER <span class="gr">num_ctx 64000</span>\n' > /tmp/<span class="c">gemma4e-64k</span>.Modelfile && ollama create <span class="c">gemma4e-64k</span> -f /tmp/<span class="c">gemma4e-64k</span>.Modelfile </code>
                     </div>
+                    <p>
+                        To see the model copy <span class="gr">Variant</span> type
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+ollama list</code>
+                    </div>
+                    
                     
                     
 
                 </div>
                 <div class="imgs-container">
                     <div class="step-img">
-                        <!-- <img loading="lazy" src="side-bar-links-pages/01-04/media/01-04-3b.png" alt=""> -->
+                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-2.png" alt="">
+                    </div>
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-2b.png" alt="">
                     </div>
                 </div>
             </div>
+            <!-- 03 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-vid-img="side-bar-links-pages/01-05/media/01-05-3c.png"
+                data-timestamp="600"
+                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
+                <h4>03 <code>ollama ps</code> <span class="t">not showing </span> <span class="gr">Variant</span></h4>    
+                
+                <div class="step-txt ">
+                    
+                    <p>
+                         the <span class="gr">Variant</span> is not appearing when i type in 
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+ollama ps</code>
+                    </div>
+                    <p>
+                        But it shows up in tutorial, so <span class="t">**WARNING</span> might be a problem 
+                    </p>
+                    
+                </div>
+                <div class="imgs-container">
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-3c.png" alt="">
+                    </div>
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-3d.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 04 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-vid-img="side-bar-links-pages/01-05/media/01-05-3c.png"
+                data-timestamp="616"
+                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
+                <h4>03 Change Ollama default <strong class="gr">Context Window</strong></h4>    
+                
+                <div class="step-txt ">
+                    <p>
+                        Change <span class="gr">context size</span> in ollama settings, but, it changes it for all models in ollama. The <span class="c">Modelfile</span> only changes specified model,
+                    </p>
+                    <p>
+                        To do so <span class="t">this tutorial assumes you have ollama installed,</span>, i'm staying on this page in ollama , it gave me a key i saved, i'm going to come back here after next lesson to make sure i have everyting correct in ollama setup,
+                    </p>
+                    
+                    <p>
+                        But it shows up in tutorial, so <span class="t">**WARNING</span> might be a problem 
+                    </p>
+                    
+                </div>
+                <div class="imgs-container">
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-3.png" alt="">
+                    </div>
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-3b.png" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
