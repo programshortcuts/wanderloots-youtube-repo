@@ -1,12 +1,36 @@
 // copy-code.js
 export function initCopyCode(root = document) {
     root.querySelectorAll('.step-txt a[href], .step-float a[href],.step a[href]').forEach(link => {
-        if (!isCopyLink(link) || link.dataset.copyLinkBound === 'true') return;
+        if (link.dataset.copyLinkBound === 'true') return;
         link.dataset.copyLinkBound = 'true';
 
-        // Preserve native keyboard activation; mouse and programmatic clicks still copy.
+        // Preserve native keyboard activation; eligible desktop clicks still copy.
         link.addEventListener('click', e => {
-            if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || !isCopyLink(link)) return;
+            if (
+                !e.defaultPrevented &&
+                e.button === 0 &&
+                !e.metaKey &&
+                !e.ctrlKey &&
+                !e.shiftKey &&
+                !e.altKey &&
+                window.matchMedia('(max-width: 720px)').matches &&
+                isMobileExternalStepLink(link)
+            ) {
+                const originalTarget = link.getAttribute('target');
+                const originalRel = link.getAttribute('rel');
+                link.setAttribute('target', '_blank');
+                link.relList.add('noopener', 'noreferrer');
+                setTimeout(() => {
+                    if (originalTarget === null) link.removeAttribute('target');
+                    else link.setAttribute('target', originalTarget);
+                    if (originalRel === null) link.removeAttribute('rel');
+                    else link.setAttribute('rel', originalRel);
+                }, 0);
+                return;
+            }
+
+            if (!isCopyLink(link)) return;
+            if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
             if (e.isTrusted && e.detail === 0 && document.activeElement === link) return;
             e.preventDefault();
             e.stopPropagation();
@@ -42,6 +66,25 @@ export function initCopyCode(root = document) {
             });
         });
     });
+}
+
+function isMobileExternalStepLink(link) {
+    if (
+        !link.closest('.step-float') ||
+        link.closest('.side-bar, .drop-down, .step-img, .step-vid, .vid-cntrl-btns, #tutorialLink, .copy-code') ||
+        link.querySelector('video')
+    ) return false;
+
+    const href = link.getAttribute('href')?.trim();
+    if (!href || href.startsWith('#')) return false;
+    if ([...document.querySelectorAll('.side-bar-links-container a[href]')].some(item => item.href === link.href)) return false;
+
+    try {
+        const url = new URL(link.href);
+        return (url.protocol === 'http:' || url.protocol === 'https:') && url.origin !== window.location.origin;
+    } catch {
+        return false;
+    }
 }
 
 function isCopyLink(link) {
