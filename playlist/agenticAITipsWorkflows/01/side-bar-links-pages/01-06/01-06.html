@@ -1,133 +1,18 @@
 <!-- 01-04.html -->
 <div id="targetDivInjected">
     <header>
-        <h3 id="lessonTitle">5. Change <span class="gr">Context Window</span> for model</h3>
+        <h3 id="lessonTitle">6. <span class="m">endpoint</span></h3>
     </header>
     <div class="main-container">
         <div class="steps-container">
 
-            <!-- 01 -->
-            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
-                data-timestamp="557"
-                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
-                <h4>01 <strong class="gr">Context Window</strong> legnths</h4>
-                <div class="step-vid ">
-                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/01-05/media/01-05-1.png"
-                    src="side-bar-links-pages/01-05/media/01-05-1.mov"></video>
-                    <div class="vid-cntrl-btns">
-                        <button class="fwdBtn">&lt;&lt;</button>
-                        <button class="playbtn">></button>
-                        <button class="rwdBtn">>></button>
-                    </div>
-                </div>
-                <div class="step-txt ">
-                    
-                    <p>
-                        <span class="t">Can't find the docs for this </span>
-                         <span class="rb">Hermes</span> website, 
-                    </p>
-                    <p>
-                        <span class="c">I found it!</span>
-                        <span class="rb">NOTE TO SELF:</span>, use search bar in docs on herems nousportal site ,
-                        I found it here 
-                        <a rel="noopener noreferrer" target="_blank" href="
-                            https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup#step-6-optimize-for-speed">
-                            https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup
-                        </a>
-                    <p>
-                        Ollama by default only runs a <span class="t">24,000</span> context legnth, we need to change it to 
-                        <span class="gr">64,000</span>
-                    </p>
-                    <p>
-                        To change <span class="gr">Context Window Length</span>, we create a <span class="c">Modelfile</span>
-                    </p>
-                    <div class="code-container">
-                        <pre tabindex="0" class="copy-code">
-# Create a Modelfile that extends context
-cat > ~/.hermes/cache/scratch/Modelfile &lt;&lt; 'EOF'
-FROM gemma4:31b
-PARAMETER num_ctx 64000
-EOF
 
-ollama create gemma4-64k -f ~/.hermes/cache/scratch/Modelfile</pre>
-                    </div>
-                    </p>
-
-                </div>
-            </div>
-            <!-- 02 -->
-            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
-                data-timestamp="570"
-                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
-                <h4>02 Change <strong class="gr">Context Window</strong>, create <span class="c">Modelfile</span></h4>    
-                <div class="step-txt ">
-                    <p>
-                        This is where the <span class="gr">Variant</span> is created to copy model with correct <span class="gr">context window </span> size with <span class="c">new name</span>
-                    </p>
-                    <p>
-                        Open the termainl and paste in the following string ,
-                    </p>
-                    <div class="code-container">
-                        <code tabindex="0" class="copy-code">
-printf 'FROM gemma4:e4b\nPARAMETER <span class="gr">num_ctx 64000</span>\n' > /tmp/<span class="c">gemma4e-64k</span>.Modelfile && ollama create <span class="c">gemma4e-64k</span> -f /tmp/<span class="c">gemma4e-64k</span>.Modelfile </code>
-                    </div>
-                    <p>
-                        To see the model copy <span class="gr">Variant</span> type
-                    </p>
-                    <div class="code-container">
-                        <code tabindex="0" class="copy-code">
-ollama list</code>
-                    </div>
-                    
-                    
-                    
-
-                </div>
-                <div class="imgs-container">
-                    <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-2.png" alt="">
-                    </div>
-                    <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-2b.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- 03 -->
-            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
-                data-vid-img="side-bar-links-pages/01-05/media/01-05-3c.png"
-                data-timestamp="600"
-                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
-                <h4>03 <code>ollama ps</code> <span class="t">not showing </span> <span class="gr">Variant</span></h4>    
-                
-                <div class="step-txt ">
-                    
-                    <p>
-                         the <span class="gr">Variant</span> is not appearing when i type in 
-                    </p>
-                    <div class="code-container">
-                        <code tabindex="0" class="copy-code">
-ollama ps</code>
-                    </div>
-                    <p>
-                        But it shows up in tutorial, so <span class="t">**WARNING</span> might be a problem 
-                    </p>
-                    
-                </div>
-                <div class="imgs-container">
-                    <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-3c.png" alt="">
-                    </div>
-                    <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-05/media/01-05-3d.png" alt="">
-                    </div>
-                </div>
-            </div>
             <!-- 04 -->
             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
                 data-vid-img="side-bar-links-pages/01-05/media/01-05-3c.png"
-                data-timestamp="616"
+                data-timestamp="660"
                 data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
-                <h4>03 Change Ollama default <strong class="gr">Context Window</strong></h4>    
+                <h4>1 <span class="m">enpoint</span></h4>    
                 
                 <div class="step-txt ">
                     <p>
