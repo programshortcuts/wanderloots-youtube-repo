@@ -6,33 +6,76 @@
     <div class="main-container">
         <div class="steps-container">
 
-            <!-- 03 -->
+            <!-- 01 -->
             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
-                data-timestamp="540"
+                data-timestamp="532"
                 data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
-                <h4>01 change<strong class="gr">Context Window</strong></h4>
-                <div class="step-img">
-                    <img loading="lazy" src="side-bar-links-pages/01-04/media/01-04-3.png" alt="">
+                <h4>01 <strong class="gr">Context Window</strong> legnths</h4>
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/01-05/media/01-05-1.png"
+                    src="side-bar-links-pages/01-05/media/01-05-1.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+                <div class="step-txt ">
+                    
+                    <p>
+                        <span class="t">Can't find the docs for this </span>
+                         <span class="rb">Hermes</span> website, 
+                    </p>
+                    <p>
+                        <span class="m">I found it!</span>
+                        <span class="rb">NOTE TO SELF:</span>, use search bar in docs on herems nousportal site ,
+                        I found it here 
+                        <a rel="noopener noreferrer" target="_blank" href="
+                            https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup#step-6-optimize-for-speed">
+                            https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup
+                        </a>
+                    <p>
+                        Ollama by default only runs a <span class="t">24,000</span> context legnth, we need to change it to 
+                        <span class="gr">64,000</span>
+                    </p>
+                    <p>
+                        To change <span class="gr">Context Window Length</span>, we create a <span class="lpb">Modelfile</span>
+                    </p>
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+# Create a Modelfile that extends context
+cat > ~/.hermes/cache/scratch/Modelfile &lt;&lt; 'EOF'
+FROM gemma4:31b
+PARAMETER num_ctx 64000
+EOF
+
+ollama create gemma4-64k -f ~/.hermes/cache/scratch/Modelfile</pre>
+                    </div>
+                    </p>
+
+                </div>
+            </div>
+            <!-- 02 -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="557"
+                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
+                <h4>02 Change <strong class="gr">Context Window</strong>, create <span class="lpb">Modelfile</span></h4>
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/01-05/media/01-05-2.png"
+                    src="side-bar-links-pages/01-05/media/01-05-2.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
                 </div>
                     
                 <div class="step-txt ">
                     
-                    <!-- <h5 class="t"><strong>Getting lost here...</strong></h5> -->
                     <p>
-                        <span class="t">Can't find the docs for this </span>
-                         <span class="rb">Hermes</span> website, 
-
-
+                        Open the termainl an
                     </p>
-                    <p>
-                        <span class="m">I found it!</span>
-
-                        <a rel="noopener noreferrer" target="_blank" href="
-                            https://hermes-agent.nousresearch.com/docs/getting-started/quickstart#:~:text=For%20most%20first%2Dtime%20users%3A%20choose%20a%20provider%2C%20accept%20the%20defaults%20unless%20you%20know%20why%20you%27re%20changing%20them.%20The%20full%20provider%20catalog%20with%20env%20vars%20and%20setup%20steps%20lives%20on%20the%20Providers%20page.">
-                            https://hermes-agent.nousresearch.com/docs/getting-started/quickstart
-                        </a>
-                        <span class="t">Nope, nevermind not it</span>
-                    </p>
+                    
 
                 </div>
                 <div class="imgs-container">
@@ -40,25 +83,6 @@
                         <!-- <img loading="lazy" src="side-bar-links-pages/01-04/media/01-04-3b.png" alt=""> -->
                     </div>
                 </div>
-            </div>
-            <div class="step-floats-container"> 
-                
-                <!-- 05 -->
-                <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
-                        data-timestamp="172">
-                    <h4>05 <strong>Build</strong></h4>
-                    <!-- <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-01/media/01-05.png" alt="">
-                    </div> -->
-                    <div class="step-txt ">
-                        <p>
-                            With everything above done, build it, and free up your time
-                        </p>
-                    </div>
-                </div>
-
-                
-
             </div>
         </div>
     </div>
