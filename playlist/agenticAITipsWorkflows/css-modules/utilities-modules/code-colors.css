@@ -14,7 +14,10 @@
 .lb {
     color: rgb(55, 117, 134);
 }
-
+/* greens */
+.l {
+    color: lime
+}
 .lg {
     color: rgb(29, 108, 83);
 }
