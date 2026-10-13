@@ -523,6 +523,15 @@ export function initInjectContentListeners() {
         e.preventDefault();
         activateSidebarLink(link, { fromSidebarActivation: true });
     });
+    sideBar.addEventListener('keydown', e => {
+        const key = e.key.toLowerCase()
+        if(key == 'meta'){
+            e.preventDefault()
+            console.log('here')
+            e.stopImmediatePropagation()
+            return
+        }
+    });
     // Native Enter on anchors emits a click; no competing keydown injector.
     sideBar.addEventListener('focusout', e => {
         if (e.target === lastSidebarActivation?.link) lastSidebarActivation = null;

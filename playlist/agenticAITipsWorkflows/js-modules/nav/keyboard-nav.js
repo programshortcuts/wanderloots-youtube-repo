@@ -18,10 +18,10 @@ export function keyboardNav({ e }) {
     if (e.defaultPrevented || !e.key || isTypingTarget(e.target)) return false;
     navState.zone = getFocusZone({ e });
     const key = e.key.toLowerCase();
-    console.log(e.key.toLowerCase())
-    if (e.metaKey && key == 'tab') {
+    if (e.metaKey && key == 'enter') {
 
         e.preventDefault()
+        e.stopPropagation()
         return
     }
     if (e.metaKey && e.shiftKey && !e.ctrlKey && !e.altKey && key === 'x') {
