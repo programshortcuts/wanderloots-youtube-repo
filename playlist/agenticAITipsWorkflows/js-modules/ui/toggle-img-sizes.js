@@ -320,8 +320,9 @@ export function handleImgSizes({ e }) {
    ========================================================= */
 
 document.addEventListener('keydown', e => {
+    
     if (e.defaultPrevented || e.key !== 'Escape' || e.metaKey || e.ctrlKey || e.altKey || isTypingTarget(e.target)) return;
-
+    
     const enlarged = [
         ...document.querySelectorAll(
             '.step-img.enlarge, ' +

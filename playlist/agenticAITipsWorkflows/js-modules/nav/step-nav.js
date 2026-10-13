@@ -438,7 +438,7 @@ export function initStepNav() {
                 return;
             }
             resetVideos(step);
-            denlargeAllImages();
+            // denlargeAllImages();
             step.dataset.mediaIndex =
                 -1;
         }
@@ -493,6 +493,7 @@ export function initStepNav() {
                 el: step,
                 smooth: true
             });
+            
             getStepActivationFocusTarget(step)?.focus({
                 preventScroll: true
             });
@@ -507,6 +508,7 @@ export function stepNav({
     e,
     navState
 }) {
+    
     if (
         navState.zone !==
         'mainTargetDiv' ||
@@ -530,6 +532,7 @@ export function stepNav({
         e.target.closest(
             '.drop-step > .drop-down'
         );
+    
     /* =====================================================
        T
        ===================================================== */
