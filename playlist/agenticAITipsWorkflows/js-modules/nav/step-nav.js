@@ -81,22 +81,24 @@ function focusStep(index) {
     if (!steps.length) {
         return false;
     }
-    const step =
-        steps[
-        (
-            index +
-            steps.length
-        ) %
-        steps.length
-        ];
+
+    // If the number exceeds the available steps,
+    // focus the last step instead.
+    index = Math.min(index, steps.length - 1);
+
+    const step = steps[index];
+
     lastStep = step;
+
     step.focus({
         preventScroll: true
     });
+
     scrollToCenter({
         el: step,
         smooth: true
     });
+
     return true;
 }
 /* =========================================================
@@ -562,6 +564,7 @@ export function stepNav({
             focusDropdownByFirstLetter(
                 key
             );
+            
         if (handled) {
             e.preventDefault();
             return true;
@@ -573,6 +576,7 @@ export function stepNav({
     if (
         /^[1-9]$/.test(key)
     ) {
+        
         const index =
             Number(key) - 1;
         /*
@@ -588,7 +592,9 @@ export function stepNav({
                     .querySelectorAll(
                         '.copy-code'
                     )[index];
+            
             if (!copy) {
+                
                 return false;
             }
             e.preventDefault();
@@ -600,7 +606,7 @@ export function stepNav({
         number selects actual .step-float.
         */
         if (
-            !steps[index]
+            !steps.length
         ) {
             return false;
         }
@@ -675,6 +681,7 @@ export function stepNav({
         This allows dropdown buttons to participate.
         */
         e.preventDefault();
+        
         return moveMainNavTarget(
             e.target,
             key === 'f'
@@ -756,7 +763,7 @@ export function stepNav({
                 : -1;
         /* =================================================
            F / A DIRECTLY ON STEP
-           OLD:
+           OLD:d
                focusStep(...)
            NEW:
                moveMainNavTarget(...)
@@ -794,6 +801,7 @@ export function stepNav({
             });
         step.dataset.mediaIndex =
             -1;
+        
         const current =
             items.indexOf(
                 document.activeElement
