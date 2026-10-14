@@ -525,11 +525,13 @@ export function initInjectContentListeners() {
     });
     sideBar.addEventListener('keydown', e => {
         const key = e.key.toLowerCase()
-        if(key == 'meta'){
-            e.preventDefault()
-            console.log('here')
-            e.stopImmediatePropagation()
-            return
+        // if(key == 'meta' || key == 'shift'){
+        if(e.metaKey || e.shiftKey){
+            if(key === 'enter'){
+                e.preventDefault()
+                e.stopImmediatePropagation()
+                return
+            }
         }
     });
     // Native Enter on anchors emits a click; no competing keydown injector.
