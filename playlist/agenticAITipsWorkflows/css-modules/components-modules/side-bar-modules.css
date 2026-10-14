@@ -93,11 +93,13 @@
     .side-bar-links>li>ul>li>a {
         font-size: 80% !important;
     }
-
-    .side-bar-links>li>ul>li>ul>li>a>*,
-    .side-bar-links>li>ul>li>ul>li>a {
+    .side-bar-links>li *,
+    .side-bar-links>li>ul>li{
         font-size: 88% !important;
     }
-
+    .side-bar-links>li>ul>li{
+        margin-left: 10%;
+    }
+    
 
 }

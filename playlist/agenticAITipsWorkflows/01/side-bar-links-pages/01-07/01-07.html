@@ -10,8 +10,14 @@
                 data-timestamp="703"
                 data-vid-img="side-bar-links-pages/01-07/media/1.png">
                 <h4>1 <span class="m">endpoint</span></h4>    
-                <div class="step-img">
-                    <img loading="lazy" src="side-bar-links-pages/01-07/media/01-07-1.png" alt="">
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/01-07/media/01-07-1-fix.png"
+                    src="side-bar-links-pages/01-07/media/01-07-1-fix.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
                 </div>
                 
                 <div class="step-txt ">
@@ -21,15 +27,34 @@
 
                     </p>
                     <p>
-                        Got stuck here this tutorial has older version of hermes desktop, see fix below sub list lesson 
+                        Got stuck here this tutorial has older version of hermes desktop, ' <span class="gr">Custom Endpoints</span>' ,is under ' <span class="rb">Providers</span> '
                     </p>
-                    <h5>Summar:</h5>
+                    <p>
+                        Provide ollama server 
+                    </p>
                     <div class="code-container">
-                        <pre tabindex="0" class="copy-code">
+                        <code tabindex="0" class="copy-code">
+http://127.0.0.1:11434/v1</code>
                     </div>
                     <p>
-                        
+                        <sup class="t">**Still don't know how to find this server address in ollama doc</sup>
                     </p>
+                    <p>
+                        along with <span class="l">name</span>
+                         and model ( the qwen 64000 context <span class="gr">Variant</span>  ) we made
+                    </p>
+                    <p>
+                        Use ollama list to find your models
+                    </p>
+                    <div class="code-container">
+    <pre tabindex="0" class="copy-code">
+ollama list
+</pre>
+                    </div>
+                    <p>
+                        <span class="rb">**Remeber</span> just use command + . to get to settings
+                    </p>
+                    
                     
                 </div>
             </div>
