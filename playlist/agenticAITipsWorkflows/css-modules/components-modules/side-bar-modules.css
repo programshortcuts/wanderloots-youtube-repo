@@ -75,6 +75,11 @@
     .side-bar {
         max-width: 22vw;
     }
+    .side-bar ul > li > ul > li a *,
+    .side-bar ul > li > ul > li a  {
+        margin-left: 5%;
+        font-size: 80%;
+    }
 }
 @media (max-width: 720px) {
     .side-bar {

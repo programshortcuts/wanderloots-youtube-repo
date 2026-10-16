@@ -19,9 +19,10 @@ export function keyboardNav({ e }) {
     navState.zone = getFocusZone({ e });
     const key = e.key.toLowerCase();
     if (e.metaKey && key == 'enter') {
-
-        e.preventDefault()
-        e.stopPropagation()
+        if (navState.zone === 'sideBar') {
+            e.preventDefault()
+            e.stopPropagation()
+        }
         return
     }
     if (e.metaKey && e.shiftKey && !e.ctrlKey && !e.altKey && key === 'x') {

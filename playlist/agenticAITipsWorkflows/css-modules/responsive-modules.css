@@ -32,6 +32,9 @@
     .step-float .code-container {
         min-width: 45%;
     }
+    .page-header{
+        max-height: 5vh;
+    }
 }
 
 @media (max-width: 720px) {

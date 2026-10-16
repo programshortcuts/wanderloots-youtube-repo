@@ -487,7 +487,7 @@ export function initStepNav() {
                 return;
             }
             step.focus({
-                preventScroll: true
+                preventScroll:false
             });
             scrollToCenter({
                 el: step,
