@@ -9,6 +9,11 @@ body.dark-mode {
     color: whitesmoke;
 }
 
+body.letter-nav-active,
+body.letter-nav-active .page-wrapper {
+    background-color: #87ceeb;
+}
+
 .dark-mode a {
     color: inherit;
 }

@@ -1,0 +1,260 @@
+<!-- 02-02.html -->
+<div id="targetDivInjected">
+    <header>
+        <h3 id="lessonTitle">02-02 Linux - Omarchy</h3>
+    </header>
+    <div class="main-container">
+        <div class="steps-container">
+            <!-- 1. -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+               data-timestamp="96">
+               <div class="step-img">
+                   <img loading="lazy" src="side-bar-links-pages/02-02/media/02-02-1.png" alt="">
+               </div>
+               
+               <div class="step-txt ">
+                   <h4>2. Ollama curl install</h4>
+                   <p>
+                        Go to <a rel="noopener noreferrer" target="_blank" href="https://ollama.com/download/mac"
+                        >ollama.com/download/mac</a>
+                    download ollama with curl 
+                    </p>
+               </div>
+           </div>
+            <!-- 2. chat-answer-1  -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/02-02/media/02-02-1.png" alt="">
+                </div>
+                
+                <div class="step-txt ">
+                    <h4>2. Hermes</h4>
+                    <p>
+                        from hermes repo,
+                        <br>
+                        <a rel="noopener noreferrer" target="_blank" href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/getting-started/installation.md#:~:text=For%20a%20command%2Dline%20only%20install%20without%20Hermes%20Desktop%2C%20run%3A">
+                            https://github.com/NousResearch/hermes-agent/blob/main/website/docs/getting-started/installation.md
+                        </a>
+                        <p>
+                            Use this curl command 
+                        </p>
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash</code>
+                    </div>
+                    <p>
+                        <span class="t"> THIs DID NOT WORK</span>
+                        <code class="l">pm install failed</code>
+                        autofocus
+                    </p>
+                </div>
+            </div>
+            <!-- 3. chat answer 2 -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/02-01/02-01-01/media/02-01-01-3.png"
+                    src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-3.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+                <div class="step-txt ">
+                    <h4>3 chat answer 2</h4>
+                    <p>
+                        the rustc and cargot command didnt' work  so
+                    </p>
+                    <p>
+                        I asked <span class="lg">ChatGPT</span>
+                    </p>
+                    
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+This is not working 
+
+tt@MacBookPro ~ % curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+
+┌─────────────────────────────────────────────────────────┐
+│             ☤ Hermes Agent Installer                    │
+├─────────────────────────────────────────────────────────┤
+│  An open source AI agent by Nous Research.              │
+└─────────────────────────────────────────────────────────┘
+
+✓ prerequisites ok (git, curl)
+→ Updating /Users/tt/.hermes/hermes-agent (main)
+✓ uv ready (uv 0.12.3 (507230998 2026-08-07 x86_64-apple-darwin))
+✓ bootstrap Python ready; PM prepares the dependency environment
+✓ uv ready (uv 0.12.3 (507230998 2026-08-07 x86_64-apple-darwin))
+✗ Installing dependencies (hash-verified via uv.lock) failed (exit 1). Last output:
+                "cargo" "rustc" "--profile" "release" "--message-format"
+                "json-render-diagnostics" "--locked" "--manifest-path"
+                "/Users/tt/.hermes/cache/uv/sdists-v9/pypi/cryptography/50.0.1/at0PBH7d1SKsWmvK/src/src/rust/Cargo.toml"
+                "--lib" "--" "-C"
+                "link-args=-Wl,-install_name,@rpath/cryptography.hazmat.bindings._rust.abi3.so"`
+                Error: command ['maturin', 'pep517', 'build-wheel', '-i',
+                '/Users/tt/.hermes/cache/uv/builds-v0/.tmpsXdRgM/bin/python',
+                '--compatibility', 'off'] returned non-zero exit status 1
+          hint: `cryptography` (v50.0.1) was included because `hermes-agent` (v0.0.0) depends on `cryptography`
+          hint: Build failures usually indicate a problem with the package or the build environment
+    ✗ venv: uv sync exited 1: rs/tt/.hermes/cache/uv/sdists-v9/pypi/cryptography/50.0.1/at0PBH7d1SKsWmvK/src/src/rust/Cargo.toml"
+          "--lib" "--" "-C"
+          "link-args=-Wl,-install_name,@rpath/cryptography.hazmat.bindings._rust.abi3.so"`
+          Error: command ['maturin', 'pep517', 'build-wheel', '-i',
+          '/Users/tt/.hermes/cache/uv/builds-v0/.tmpsXdRgM/bin/python',
+          '--compatibility', 'off'] returned non-zero exit status 1
+
+
+    hint: `cryptography` (v50.0.1) was included because `hermes-agent` (v0.0.0) depends on `cryptography`
+    hint: Build failures usually indicate a problem with the package or the build environment — retry, or run `hermes pm doctor`
+    full log: /Users/tt/.hermes/logs/install.log
+✗ pm install failed
+tt@MacBookPro ~ % hermes doctor
+zsh: command not found: hermes
+tt@MacBookPro ~ % </pre>
+                    </div>
+                    <p>
+                        <span class="lb">Chatgpt</span> checked, 
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+grep -n -E -i -C 5 'error:|openssl|pkg-config|failed to run custom build|rustc' ~/.hermes/logs/install.log | tail -100</code>
+                    </div>
+                    <p>
+                        then,
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+xcode-select -p</code>
+                    </div>
+                    <p>
+                        <span class="t">rustc</span> and <span class="t">cargo</span> didn't work
+                    </p>
+                    <p>
+                        Fix in next step
+                    </p>
+                    
+                    
+                    
+                </div>
+            </div>
+            <!-- 4. chat answer 3 -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                <div class="step-vid ">
+                    <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4.png"
+                    src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4.mov"></video>
+                    <div class="vid-cntrl-btns">
+                        <button class="fwdBtn">&lt;&lt;</button>
+                        <button class="playbtn">></button>
+                        <button class="rwdBtn">>></button>
+                    </div>
+                </div>
+                <div class="step-txt ">
+                    <h4>4 chat answer 3</h4>
+                    <p>
+                         <span class="lg">ChatGPT</span> says,
+                    </p>
+                    <p>
+                        Install <i>Mac Ports from </i> <a href="https://www.macports.org/install.php">https://www.macports.org/install.php</a>
+                        I'm using sequoia
+                    </p>
+                    <p>
+                        Check if ports is installed
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+port version</code>
+                    </div>
+                    <p>
+                        run this command in termainl found her in mac ports doc
+                        <a href="https://ports.macports.org/port/rust/">https://ports.macports.org/port/rust/</a>
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+sudo port install pkgconf openssl rust</code>
+                    </div>
+                    <p>
+                        <span class="t">Site in link above for rust show</span>
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+sudo port install rust</code>
+                    </div>
+                
+                </div>
+            </div>
+            <!-- 5. new -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4b.png" alt="">
+                    </div>
+                <div class="step-txt ">
+                    <h4>5 chat answer 3-b?</h4>
+     
+                    <h5>check everything</h5>
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+pkg-config --version
+openssl version
+rustc --version
+cargo --version</pre>
+                    </div>
+                    <p>
+                        Then verify that OpenSSL is discoverable:
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+pkg-config --modversion openssl                            </code>
+                    </div>
+                    <h5>RUN THESE FINALLY </h5>
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+                            export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export OPENSSL_DIR="/opt/local"
+export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig"
+
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+                        </pre>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+                <div class="imgs-container">
+                    
+                    <div class="step-vid ">
+                        <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4c.png"
+                        src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4c.mov"></video>
+                        <div class="vid-cntrl-btns">
+                            <button class="fwdBtn">&lt;&lt;</button>
+                            <button class="playbtn">></button>
+                            <button class="rwdBtn">>></button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- 5. chat end -->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4c.png" alt="">
+                </div>
+                
+                
+                <div class="step-txt ">
+                    <h4>5. chat answer end</h4>
+                    <p>
+                        It's working, but don't don't mess with this , just QUIT HERMES FOR NOW
+                    </p>
+                </div>
+            </div>
+        
+    </div>
+</div>

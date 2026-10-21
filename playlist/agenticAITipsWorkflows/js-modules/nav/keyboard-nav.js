@@ -18,17 +18,24 @@ export function keyboardNav({ e }) {
     if (e.defaultPrevented || !e.key || isTypingTarget(e.target)) return false;
     navState.zone = getFocusZone({ e });
     const key = e.key.toLowerCase();
+    if (e.metaKey && e.shiftKey && !e.ctrlKey && !e.altKey && key === 'x') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        popupLetterNav({ e, navState });
+        return true;
+    }
+    if (navState.isLetterNavEnabled) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        if (/^[a-z0-9]$/.test(key)) letterNav({ e });
+        return true;
+    }
     if (e.metaKey && key == 'enter') {
         if (navState.zone === 'sideBar') {
             e.preventDefault()
             e.stopPropagation()
         }
         return
-    }
-    if (e.metaKey && e.shiftKey && !e.ctrlKey && !e.altKey && key === 'x') {
-        e.preventDefault();
-        popupLetterNav({ e, navState });
-        return true;
     }
     if (e.metaKey || e.ctrlKey || e.altKey) return false;
     if (key === 'h') {
@@ -41,12 +48,6 @@ export function keyboardNav({ e }) {
         }
         return focusTarget(e, target);
     }
-    if (navState.isLetterNavEnabled && /^[a-z0-9]$/.test(key)) {
-        e.preventDefault();
-        letterNav({ e });
-        return true;
-    }
-
     const headerTargets = {
         b: '#backlink, #backLink', c: '#codeComandShortcuts, #codeComShortcutsLink',
         d: '#darkModeBtn'

@@ -20,7 +20,7 @@ function initMain() {
     initDarkMode();
     initHeaderScroll();
     initInjectContentListeners();
-    window.addEventListener('keydown', e => keyboardNav({ e }));
+    window.addEventListener('keydown', e => keyboardNav({ e }), true);
 }
 
 if (document.readyState === 'loading') {

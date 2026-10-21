@@ -15,6 +15,10 @@ function navigationLabel(element) {
     return source?.textContent?.trim().toLowerCase() || '';
 }
 
+function navigationKeys(label) {
+    return [label.match(/[0-9]/)?.[0], label.match(/[a-z]/)?.[0]].filter(Boolean);
+}
+
 export function isActuallyVisible(element) {
     if (!element || element.closest('[hidden], [inert]')) return false;
     if (mainContainer?.classList.contains('collapsed') && element.closest('.side-bar') && element.id !== 'sideBarBtn') return false;
@@ -28,9 +32,9 @@ export function letterNav({ e }) {
     if (!e.key || e.metaKey || e.ctrlKey || e.altKey || isTypingTarget(e.target)) return false;
     const key = e.key.toLowerCase();
     if (!/^[a-z0-9]$/.test(key)) return false;
-    const candidates = [...document.querySelectorAll('a[href], button, [tabindex], [data-nav-target],.  step-float,.step, .side-bar a')]
+    const candidates = [...document.querySelectorAll('a[href], button, [tabindex], [data-nav-target], .step-float, .step')]
         .filter(element => !element.disabled && isActuallyVisible(element));
-    const matches = candidates.filter(element => navigationLabel(element).startsWith(key));
+    const matches = candidates.filter(element => navigationKeys(navigationLabel(element)).includes(key));
     if (!matches.length) return false;
     const activeIndex = matches.indexOf(document.activeElement);
     const targetIndex = key !== lastLetterPressed || activeIndex < 0
