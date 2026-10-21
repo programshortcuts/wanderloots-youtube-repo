@@ -1,90 +1,201 @@
-<!-- 01-07.html -->
+<!-- 02-02-01.html -->
 <div id="targetDivInjected">
     <header>
-        <h3 id="lessonTitle">7. <span class="m">endpoint</span></h3>
+        <h3 id="lessonTitle">02-02-01 Hermes ChatGpt</h3>
     </header>
-        <div class="main-container">
+    <div class="main-container">
         <div class="steps-container">
-            <!-- 1. -->
-            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
-                data-timestamp="712"
-                data-vid-img="side-bar-links-pages/01-07/media/1.png">
-                <h4>1 <span class="lg">ChatGTP</span> <span class="m">endpoint</span></h4>    
+            <!-- 1. Hermes -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
                 <div class="step-img">
-                    <img loading="lazy" src="side-bar-links-pages/01-07/01-07-01/media/01-07-01-1.png" alt="">
+                    <img loading="lazy" src="side-bar-links-pages/02-02/media/2.png" alt="">
                 </div>
                 
                 <div class="step-txt ">
+                    <h4>2. Hermes</h4>
                     <p>
-                        <span class="t">I'm STUCK HERE</span>, i can't find where to select endpoint in hermes.
+                        from hermes repo,
+                        <br>
+                        <a rel="noopener noreferrer" target="_blank" href="https://github.com/NousResearch/hermes-agent/blob/main/website/docs/getting-started/installation.md#:~:text=For%20a%20command%2Dline%20only%20install%20without%20Hermes%20Desktop%2C%20run%3A">
+                            https://github.com/NousResearch/hermes-agent/blob/main/website/docs/getting-started/installation.md
+                        </a>
+                        <p>
+                            Use this curl command 
+                        </p>
                     </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash</code>
+                    </div>
                     <p>
-                        <span class="rb">Asked Chatgpt the following prompt</span> and provided this screen shot
+                        <span class="t"> THIs DID NOT WORK</span>
+                        <code class="l">pm install failed</code>
+                        autofocus
+                    </p>
+                </div>
+            </div>
+            <h4 class="t">Problems</h4>
+            <!-- 2. Hermes command line prompts -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/02-02/02-02-01/media/2-2-1-2a.png" alt="">
+                </div>
+                
+                <div class="step-txt ">
+                    <h4>3 Hermes command line prompts</h4>
+                    <p><span class="t">I didn't complete this first time, </span> curled again,</p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash</code>
+                    </div>
+                    <p>probably bad idea</p>, go this this in terminal
+                    <p>
+                        Asked <span class="lb">Chatgpt:</span>
                     </p>
                     <div class="code-container">
                         <pre tabindex="0" class="copy-code">
-I'm running into another issue following this tutorial, he is talking about enpoints, and connecting to the local server, but this option i can't find in my setup in the screen shot on the right with the tutorial video in the background on left, , the only thing i find for that local server is in fallback models, i don't know how to create an enpint like  he is talkng about
-</pre>
+I'm installing hermes using this curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+from https://github.com/NousResearch/hermes-agent/blob/main/website/docs/getting-started/installation.md
+my terminal in linux omarchy is asking to chooose from three options :
+- quick Setup (nous portal) - free OAuth...
+- Full setup - confugure every provider tool and option yourself
+-Blank Slate - everything off except the bare minum 
+
+what should i choose if i plan i running local models, locally?</pre>
                     </div>
+                    <h5><span class="lb">Chatgpt Says:</span> </h5>
                     <p>
-                        <span class="rb">found it</span> 
-                        insert this url here
-                    </p>   
-                    <div class="code-container">
-                        <code tabindex="0" class="copy-code">
-http://127.0.0.1:11434/v1</code>
-                    </div>
+                        Choose <span class="l">Blank Slate</span>
+                    </p>
+                    
+                </div>
+                
+            </div>
+            <!-- 3. Hermes command line prompts -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/02-02/02-02-01/media/3b.png" alt="">
+                </div>
+                
+                <div class="step-txt ">
+                    <h4>3 Hermes command line prompts</h4>
                     <p>
-                        Get exact model with ollama list in my case it's
+                        For the next prompt i asked we have to <span class="o">Select provider</span>
                     </p>
                     <div class="code-container">
-                        <code tabindex="0" class="copy-code">
-gemma4e-64k:latest</code>
+                        <pre tabindex="0" class="copy-code">
+ok i plan i using ollama with it i should of have mentioned that i'm now on the next prompt, asking a bunch of options for Select provider, the first option being Nous Portal(Everythin your agent needs, 300+models with bundles tool use, then everything else like first works AI LM Studio Open, qwen Copiolot etc, i plan i running models locally with ollama i download from ollama for now</pre>
                     </div>
-                    
-                    
+                    <p>
+                         <span class="lb">Chatgpt say:</span>
+                         scroll down and choose <span class="l">custom local endpoint</span>
+                         Then don't enter anyting for api key or server yet, just press enter 
+                         for Next Two Prompts
+
+                    </p>
                 </div>
                 <div class="imgs-container">
                     <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-07/01-07-01/media/01-07-01-1b.png" alt="">
+                        <img loading="lazy" src="side-bar-links-pages/02-02/02-02-01/media/3b.png" alt="">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <!-- 4. Nous portal code acct -->
+             <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                <div class="step-txt ">
+                    <h4>4 <span class="l">keep current</span></h4>
+                    <p>
+                        In the following prompt after API, chat says to select 
+                        <span class="l">keep current</span> and in the following prompt choose , 
+                        <span class="l">Start with everything disabled </span>
+                    </p>
+                    <span class="rb">DONE,</span>
+                </div>
+                <div class="imgs-container">
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/02-02/02-02-01/media/4a.png" alt="">
                     </div>
                     <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-07/01-07-01/media/01-07-01-1c.png" alt="">
+                        <img loading="lazy" src="side-bar-links-pages/02-02/02-02-01/media/4b.png" alt="">
                     </div>
                 </div>
             </div>
-            <!-- 1. -->
-            <!-- <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
-                data-timestamp="703"
-                data-vid-img="side-bar-links-pages/01-07/media/1.png">
-                <h4>1 <span class="lg">ChatGTP</span> <span class="m">endpoint</span></h4>    
+            <!-- 5. new -->
+             <!-- <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
                 <div class="step-img">
-                    <img loading="lazy" src="side-bar-links-pages/01-07/01-07-01/media/01-07-01-1.png" alt="">
-                </div>
-                
+                        <img loading="lazy" src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4b.png" alt="">
+                    </div>
                 <div class="step-txt ">
-                    <p>
-                        <span class="t">I'm STUCK HERE</span>, i can't find where to select endpoint in hermes.
-                    </p>
-                    <p>
-                        <span class="rb">Asked Chatgpt the following prompt</span> and provided this screen shot
-                    </p>
+                    <h4>5 chat answer 3-b?</h4>
+     
+                    <h5>check everything</h5>
                     <div class="code-container">
                         <pre tabindex="0" class="copy-code">
-I'm running into another issue following this tutorial, he is talking about enpoints, and connecting to the local server, but this option i can't find in my setup in the screen shot on the right with the tutorial video in the background on left, , the only thing i find for that local server is in fallback models, i don't know how to create an enpint like  he is talkng about
-</pre>
+pkg-config --version
+openssl version
+rustc --version
+cargo --version</pre>
                     </div>
+                    <p>
+                        Then verify that OpenSSL is discoverable:
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+pkg-config --modversion openssl                            </code>
+                    </div>
+                    <h5>RUN THESE FINALLY </h5>
+                    <div class="code-container">
+                        <pre tabindex="0" class="copy-code">
+                            export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export OPENSSL_DIR="/opt/local"
+export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig"
+
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+                        </pre>
+                    </div>
+                    
+                    
+                    
                     
                 </div>
                 <div class="imgs-container">
-                    <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-07/01-07-01/media/01-07-01-1b.png" alt="">
+                    
+                    <div class="step-vid ">
+                        <video preload="none" playsinline webkit-playsinline poster="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4c.png"
+                        src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4c.mov"></video>
+                        <div class="vid-cntrl-btns">
+                            <button class="fwdBtn">&lt;&lt;</button>
+                            <button class="playbtn">></button>
+                            <button class="rwdBtn">>></button>
+                        </div>
                     </div>
-                    <div class="step-img">
-                        <img loading="lazy" src="side-bar-links-pages/01-07/01-07-01/media/01-07-01-1c.png" alt="">
-                    </div>
+                    
                 </div>
             </div> -->
-        </div>
+            <!-- 5. chat end -->
+            <!-- <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="96">
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/02-01/02-01-01/media/02-01-01-4c.png" alt="">
+                </div>
+                
+                
+                <div class="step-txt ">
+                    <h4>5. chat answer end</h4>
+                    <p>
+                        It's working, but don't don't mess with this , just QUIT HERMES FOR NOW
+                    </p>
+                </div>
+            </div> -->
+        
     </div>
 </div>
