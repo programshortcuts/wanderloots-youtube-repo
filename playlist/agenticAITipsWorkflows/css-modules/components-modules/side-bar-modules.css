@@ -1,5 +1,7 @@
 /* Course counterpart of topics/css/components/side-bar.css. */
-
+ul > li > ul h5 {
+    font-size: 80% ;
+}
 .side-bar-links-container ul {
     list-style: none;
     margin: 0;

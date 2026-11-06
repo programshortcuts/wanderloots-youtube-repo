@@ -1,0 +1,249 @@
+<!-- 02-02-01.html -->
+<div id="targetDivInjected">
+    <header>
+        <h3 id="lessonTitle">02-02-01 Hermes ChatGpt</h3>
+    </header>
+    <div class="main-container">
+        <div class="steps-container">
+             <!-- 1. Ollama-->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+               data-timestamp="96">
+               <h4>2. Ollama curl install</h4>
+               <div class="step-img">
+                   <img loading="lazy" src="side-bar-links-pages/02-02/02-02-02/media/1b.png" alt="">
+               </div>
+               <div class="step-txt ">
+                   <p>
+                        Go to <a rel="noopener noreferrer" target="_blank" href="https://ollama.com/download/mac"
+                        >ollama.com/download/mac</a>
+                    download ollama with curl 
+                    </p>
+                    <p>
+                        <span class="lb">Chatgpt</span> recommends 
+
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+ollama pull <span tabindex="0" class="copy-code">qwen3.5:4b</span></code>
+                    </div>
+                    <p>
+                        For MAC INTEL 16GB
+                    </p>
+                    <p>
+                        check if you have
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+ollama version</code>
+                    </div>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+ollama list</code>
+                    </div>
+                    
+               </div>
+               
+               
+           </div>
+           <!-- 2. -->
+           <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="570"
+                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
+                
+                <h4>2. Ollama <span class="gr">Variant</span></h4>
+                <div class="step-img">
+                   <img loading="lazy" src="side-bar-links-pages/02-02/02-02-02/media/2.png" alt="">
+               </div>
+                <div class="step-txt ">
+                    <p>
+                        This is where the <span class="gr">Variant</span> is created to copy model with correct <span class="gr">context window </span> size with <span class="c">new name</span>
+                    </p>
+                    <p>
+                        Open the termainl and paste in the following string ,
+                    </p>
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+<span class="l">printf</span> 'FROM gemma4:e4b\nPARAMETER <span class="gr">num_ctx 64000</span>\n' > /tmp/<span class="c">gemma4e-64k</span>.Modelfile && ollama create <span class="c">gemma4e-64k</span> -f /tmp/<span class="c">gemma4e-64k</span>.Modelfile </code>
+                    </div>
+                    <p>
+                        <sup class="t">** I don't understand how it's implemeted from this </sup> 
+                    </p>
+
+                    <div class="code-container">
+                        <code tabindex="0" class="copy-code">
+ollama list</code>
+                    </div>
+                    <p>To see the model copy <span class="gr">Variant</span> type</p>
+                    <p>
+                        **Running the <code class="l">printf</code> command ALSO pulled the model with having to download it first 
+                    </p>
+                    
+
+                </div>
+            </div>
+            <!-- 3. -->
+           <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                data-timestamp="570"
+                data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
+                
+                <h4>3. Start <span class="t">error</span></h4>
+            
+                <div class="step-txt">
+                    <span class="t">NOT working</span> i tried running ,
+                </div>
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+ollama launch hermes-desktop</code>
+                </div>
+                <p>
+                    Works and sees the <span class="gr">Varient we made but says </span>
+                </p>
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+desktop gui source not found at: /home/tt/.local/shar/ mise ... Error : exit status 1</code>
+                </div>
+                <div class="imgs-container">
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/02-02/02-02-02/media/3.png" alt="">
+                    </div>
+                    <div class="step-img">
+                        <img loading="lazy" src="side-bar-links-pages/02-02/02-02-02/media/3b.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <!-- 4. chat trouble shoot 1-->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                 data-timestamp="570"
+                 data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
+                 
+                 <h4>5  . <span class="lb">Chatgpt</span> <span class="t">Troubleshoot</span><span class="t">error</span> <span class="rb">Hermes</span> Desktop -1</h4>
+                <div class="step-img">
+                    <img loading="lazy" src="side-bar-links-pages/02-02/02-02-02/media/4.png" alt="">
+                </div>
+                 <div class="step-txt">
+                    <p>
+                        I pasted in entire termainl from above,                   
+                    <p>
+                    <p>
+                        <span class="lb">Chatgpt</span> is saying ,
+                    </p>
+                    <pre>
+                        We found the problem! Your Hermes Desktop files are already installed, but Hermes is launching from the wrong location.
+
+Your terminal confirms:
+Desktop source exists
+
+~/.hermes/hermes-agent/apps/desktop
+Hermes is looking here instead
+
+~/.local/share/mise/installs/pipx-hermes-agent/0.19.0/hermes-agent/lib/python3.13/site-packages/apps/desktop
+                    </pre>
+                 </div>
+                 <div class="code-container">
+                     <pre tabindex="0" class="copy-code">
+ i just made a variant of the qwen model then i tried running 
+
+ollama launch hermes-desktop
+
+but i'm getting this 
+
+desktop gui source not found at: /home/tt/.local/shar/ mise ... Error : exit status 1/
+
+all on my omarchy linux mac with 16gb of ram , what do i have to do to get hermes desktop going</pre>
+                 </div>
+                 <p>
+                    <span class="lb">Chatgpt</span> says:
+                 </p>
+                 <p>
+                    Do everything in the picutre, <code class="t">ollama launch hermes-desktop -- --forcebuild</code> DOES NOT work
+                 </p>
+                 <p>
+                    These command just display everything 
+                 </p>
+                 <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+which hermes</code>
+                 </div>
+                 <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+hermes --version</code>
+                 </div>
+                 <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+ls -la ~/.hermes/hermes-agent/apps/desktop</code>
+                 </div>
+                 
+                 
+                 
+                 
+                 
+            </div>
+            <!-- 5. chat trouble shoot 2-->
+            <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?v=4KXLW9Y1r4c&list=PLWhMzDKA7vJ5VxoVa32JcCxYl8sHKP4Ds&index=1"
+                 data-timestamp="570"
+                 data-vid-img="side-bar-links-pages/01-04/media/01-04-3.png">
+                 
+                 <h4>5. <span class="lb">Chatgpt</span> <span class="t">Troubleshoot</span>
+                    <span class="t">error</span> <span class="rb">Hermes</span> Desktop -1</h4>
+               <div class="step-img">
+                         <img loading="lazy" src="side-bar-links-pages/02-02/02-02-02/media/4.png" alt="">
+                     </div>
+                 <div class="step-txt">
+                    <p>
+                        Asking <span class="lb">Chat</span> about the above error, i asked:
+                    </p>
+                 </div>
+                 <div class="code-container">
+                     <pre tabindex="0" class="copy-code">
+ i just made a variant of the qwen model then i tried running 
+
+ollama launch hermes-desktop
+
+but i'm getting this 
+
+desktop gui source not found at: /home/tt/.local/shar/ mise ... Error : exit status 1/
+
+all on my omarchy linux mac with 16gb of ram , what do i have to do to get hermes desktop going</pre>
+                 </div>
+                 <p>
+                    <span class="lb">Chatgpt</span> says:
+                 </p>
+                 <p>
+                    Do everything in the picutre, <code class="t">ollama launch hermes-desktop -- --forcebuild</code> DOES NOT work
+                 </p>
+                 <p>
+                    These command just display everything 
+                 </p>
+                 <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+which hermes</code>
+                 </div>
+                 <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+hermes --version</code>
+                 </div>
+                 <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+ls -la ~/.hermes/hermes-agent/apps/desktop</code>
+                 </div>
+                 
+                 
+                 
+            </div>
+        </div>
+        <div tabindex="0" class="step-float" data-video="https://www.youtube.com/watch?app=desktop&v=pTiRfPuTuvU&ra=m" 
+            data-timestamp="">
+            <div  class="step-txt ">
+                <h4></h4>
+                <p>
+                   EVERYTHING IS SO MESSED UP DELETE EVERYTHING , re-try
+                </p>
+                <div class="code-container">
+                    <code tabindex="0" class="copy-code">
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
